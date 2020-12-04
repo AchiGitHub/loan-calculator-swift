@@ -28,7 +28,7 @@ class Helper{
         return round(100*exp)/100
     }
     
-    // MARK: Can be used to calculate mortagage payment
+    // MARK: Calculate mortagage payment
     static func calculateMortgagePaymentAmount(_ interestRate: Double, _ initialInvestment: Double, _ numberOfPayments: Int)-> String {
         
         let calculatedMonthlyInterestRate = calculateMonthlyInterestRate(interestRate)
@@ -189,4 +189,31 @@ class Helper{
         }
         return String("Rs. \(roundOffDoubleValue(futureValue/denominator))")
     }
+    
+    // MARK: Compound Interest for principal
+    static func calculateCompoundInterest(_ initialValue: Double, _ numberOfCompounds: Int, _ interestRate: Double, _ duration: Int) -> Double {
+        return initialValue*pow((1+interestRate/Double(numberOfCompounds)), Double(numberOfCompounds*duration))
+    }
+    
+    //MARK: Calculate Final future value
+    static func calculateTotalFutureValue(_ initialInvestment: Double, _ interestRate: Double,_ paymentAmount: Double, _ duration: Int, _ numberOfCompounds: Int ,_ monthStart: Bool) -> String {
+        let calculatedMonthlyInterestRate = calculateMonthlyInterestRate(interestRate)
+        let compoundInterest = calculateCompoundInterest(initialInvestment, numberOfCompounds, interestRate, duration)
+        
+        let numerator = pow(1+(calculatedMonthlyInterestRate/Double(numberOfCompounds)), Double(numberOfCompounds*duration))-1
+        let denominator = calculatedMonthlyInterestRate/Double(numberOfCompounds)
+        
+        if denominator == 0 {
+            return "Invalid Inputs. Please Provide valid inputs"
+        }
+        let futureValueOfASeries = paymentAmount*(numerator/denominator)
+        
+        if monthStart {
+            let futureValueAtStart = futureValueOfASeries*(1+(calculatedMonthlyInterestRate/Double(numberOfCompounds)))
+            return "Rs. \(roundOffDoubleValue(compoundInterest+futureValueAtStart))"
+        }
+        
+        return String("Rs. \(roundOffDoubleValue(compoundInterest+futureValueOfASeries))")
+    }
+    
 }
