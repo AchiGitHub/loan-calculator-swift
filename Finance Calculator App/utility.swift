@@ -64,6 +64,10 @@ class Helper{
 
         let calculated_monthly_payment: Double = func_numerator/func_denominator
         
+        if calculated_monthly_payment.isNaN {
+            return "Calculated payment unreasonable. Check inputs."
+        }
+        
         return String("Rs. \(roundOffDoubleValue(calculated_monthly_payment))")
     }
     
