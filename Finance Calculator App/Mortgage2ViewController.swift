@@ -21,6 +21,13 @@ class MortgageViewController: UIViewController {
         homePrice.addTarget(self, action: #selector(self.homePriceDidChange(_:)), for: .editingChanged)
         interestRate.addTarget(self, action: #selector(self.interestRateDidChange(_:)), for: .editingChanged)
         numberOfYears.addTarget(self, action: #selector(self.lengthOfLoanDidChange(_:)), for: .editingChanged)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+            NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+        
+        let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:)))
+        
+        view.addGestureRecognizer(tap)
     }
     
     @IBAction func homePriceDidChange(_ sender: UITextField) {
@@ -59,5 +66,20 @@ class MortgageViewController: UIViewController {
         let homePriceDouble:Double? = Double(homePrice) ?? 0
         
         return Helper.calculateMortgagePaymentAmount(interestRate, homePriceDouble!, numberOfYearsInt!)
+    }
+    
+    
+    @objc func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y == 0 {
+                self.view.frame.origin.y -= keyboardSize.height
+            }
+        }
+    }
+
+    @objc func keyboardWillHide(notification: NSNotification) {
+        if self.view.frame.origin.y != 0 {
+            self.view.frame.origin.y = 0
+        }
     }
 }
