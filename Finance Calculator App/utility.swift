@@ -176,7 +176,7 @@ class Helper{
         if Int(numerator/denominator) < 0 {
             return "Invalid Inputs. Please check the Inputs"
         }
-        return String("\(Int(numerator/denominator)) Months")
+        return String("\(Int(numerator/(denominator*12))) Years")
     }
     
     //MARK: Calculate principal amount on investment

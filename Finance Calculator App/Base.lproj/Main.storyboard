@@ -151,7 +151,7 @@
                                             <constraint firstAttribute="height" constant="50" id="REh-pO-aib"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                     </textField>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="TM6-pj-1Db">
                                         <rect key="frame" x="0.0" y="473" width="374" height="21"/>
@@ -180,7 +180,7 @@
                                             <constraint firstAttribute="height" constant="21" id="ryF-NF-3L5"/>
                                         </constraints>
                                     </stackView>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1.5" minValue="0.0" maxValue="3" translatesAutoresizingMaskIntoConstraints="NO" id="z7O-pI-nRj">
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1.5" minValue="0.0" maxValue="150" translatesAutoresizingMaskIntoConstraints="NO" id="z7O-pI-nRj">
                                         <rect key="frame" x="-2" y="504" width="378" height="61"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="Igf-vh-UlR"/>
@@ -206,7 +206,7 @@
                                             <constraint firstAttribute="height" constant="50" id="zQc-bI-fEN"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rc0-gN-TDO">
                                         <rect key="frame" x="0.0" y="674" width="374" height="51"/>
@@ -551,7 +551,7 @@
                                             <constraint firstAttribute="height" constant="50" id="W9w-Fv-rZq"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                     </textField>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="vJj-2a-REq">
                                         <rect key="frame" x="0.0" y="473" width="374" height="21"/>
@@ -580,7 +580,7 @@
                                             <constraint firstAttribute="height" constant="21" id="lMT-zM-6wg"/>
                                         </constraints>
                                     </stackView>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1.5" minValue="0.0010000000474974513" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="IPe-Wt-lLZ">
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1.5" minValue="0.001" maxValue="150" translatesAutoresizingMaskIntoConstraints="NO" id="IPe-Wt-lLZ">
                                         <rect key="frame" x="-2" y="504" width="378" height="61"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="C3b-dK-oCg"/>
@@ -606,7 +606,7 @@
                                             <constraint firstAttribute="height" constant="50" id="tm9-hO-D4M"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="08Z-Ax-cOc">
                                         <rect key="frame" x="0.0" y="674" width="374" height="51"/>
@@ -785,7 +785,7 @@
                                             <constraint firstAttribute="height" constant="50" id="Nxy-Cg-Waz"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                         <connections>
                                             <action selector="homePriceDidChange:" destination="YVF-Rc-cqO" eventType="editingDidEnd" id="NB8-6x-f8p"/>
                                         </connections>
@@ -844,7 +844,7 @@
                                             <constraint firstAttribute="height" constant="50" id="cW5-4s-VD6"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                                         <connections>
                                             <action selector="lengthOfLoanDidChange:" destination="YVF-Rc-cqO" eventType="editingDidEnd" id="WMH-oc-ZFE"/>
                                         </connections>
@@ -993,7 +993,7 @@
                                             <constraint firstAttribute="height" constant="21" id="APU-yF-z4h"/>
                                         </constraints>
                                     </stackView>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="30" minValue="0.0" maxValue="150" translatesAutoresizingMaskIntoConstraints="NO" id="8Rx-j4-Okr">
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="30" minValue="0.001" maxValue="150" translatesAutoresizingMaskIntoConstraints="NO" id="8Rx-j4-Okr">
                                         <rect key="frame" x="-2" y="489" width="378" height="61"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="bdY-hU-L1V"/>
@@ -1224,7 +1224,7 @@
                                             <constraint firstAttribute="height" constant="50" id="hc1-yJ-65A"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                     </textField>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="CtT-4g-N0s">
                                         <rect key="frame" x="0.0" y="473" width="374" height="21"/>
@@ -1248,7 +1248,7 @@
                                             <constraint firstAttribute="height" constant="21" id="2Rv-ez-tCh"/>
                                         </constraints>
                                     </stackView>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1.5" minValue="0.0010000000474974513" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="wWt-QE-37V">
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1.5" minValue="0.001" maxValue="150" translatesAutoresizingMaskIntoConstraints="NO" id="wWt-QE-37V">
                                         <rect key="frame" x="-2" y="504" width="378" height="61"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="maC-KJ-am1"/>
@@ -1274,7 +1274,7 @@
                                             <constraint firstAttribute="height" constant="50" id="IoI-LJ-iUs"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dis-Kg-dP4">
                                         <rect key="frame" x="0.0" y="674" width="374" height="51"/>
@@ -1379,7 +1379,7 @@
                                             <constraint firstAttribute="height" constant="50" id="eD7-sb-1EY"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                     </textField>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Tsb-gR-gvg">
                                         <rect key="frame" x="0.0" y="323" width="374" height="21"/>
@@ -1393,7 +1393,7 @@
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="35 %" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4f1-36-doZ">
                                                 <rect key="frame" x="312" y="0.0" width="62" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                 <connections>
                                                     <action selector="interestRateTextDidChange:" destination="uyn-7J-SLb" eventType="editingChanged" id="EDI-gj-b6u"/>
                                                 </connections>
@@ -1403,7 +1403,7 @@
                                             <constraint firstAttribute="height" constant="21" id="9xa-ex-AxR"/>
                                         </constraints>
                                     </stackView>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1.5" minValue="0.0010000000474974513" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Z1q-Xe-b46">
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1.5" minValue="0.001" maxValue="150" translatesAutoresizingMaskIntoConstraints="NO" id="Z1q-Xe-b46">
                                         <rect key="frame" x="-2" y="354" width="378" height="61"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="jkr-lF-kA5"/>
@@ -1429,7 +1429,7 @@
                                             <constraint firstAttribute="height" constant="50" id="b0H-0N-dCr"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Duration (Years)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6RE-En-xQ8">
                                         <rect key="frame" x="0.0" y="524" width="374" height="30"/>
@@ -1446,7 +1446,7 @@
                                             <constraint firstAttribute="height" constant="50" id="YPY-Fy-K9D"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                                     </textField>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="K0r-V5-00U">
                                         <rect key="frame" x="0.0" y="624" width="374" height="40"/>
@@ -1527,7 +1527,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="yA5-T6-pVF"/>
+        <segue reference="ClW-F9-5uZ"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="calculate_background" width="375" height="812"/>
