@@ -1825,25 +1825,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m53-Yl-Q3B">
-                                <rect key="frame" x="0.0" y="88" width="398" height="725"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hGP-eF-oaZ">
-                                        <rect key="frame" x="10" y="50" width="378" height="625"/>
+                                        <rect key="frame" x="10" y="50" width="394" height="625"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="XL4-0N-eN0">
-                                                <rect key="frame" x="0.0" y="0.0" width="378" height="308.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="394" height="308.5"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n9W-2C-cXO" userLabel="ButtonView">
-                                                        <rect key="frame" x="0.0" y="0.0" width="187" height="308.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="195" height="308.5"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="L3U-Nv-TRR">
-                                                                <rect key="frame" x="10" y="13" width="167" height="280.5"/>
+                                                                <rect key="frame" x="10" y="13" width="175" height="280.5"/>
                                                                 <subviews>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CHX-cY-eJK">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="167" height="138"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="175" height="138"/>
                                                                         <subviews>
                                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="futureValue" translatesAutoresizingMaskIntoConstraints="NO" id="cd7-QW-d5u">
-                                                                                <rect key="frame" x="24" y="20" width="119" height="98"/>
+                                                                                <rect key="frame" x="24" y="20" width="127" height="98"/>
                                                                             </imageView>
                                                                         </subviews>
                                                                         <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="0.84170770969999997" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1855,10 +1855,7 @@
                                                                         </constraints>
                                                                     </view>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Calculate Total Future Value" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7qm-dU-cNk">
-                                                                        <rect key="frame" x="0.0" y="143" width="167" height="137.5"/>
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="width" constant="167" id="MDf-S6-ERL"/>
-                                                                        </constraints>
+                                                                        <rect key="frame" x="0.0" y="143" width="175" height="137.5"/>
                                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                                         <color key="textColor" red="0.23921568630000001" green="0.30588235289999999" blue="0.43921568630000002" alpha="0.84170770969999997" colorSpace="custom" customColorSpace="displayP3"/>
                                                                         <nil key="highlightedColor"/>
@@ -1884,16 +1881,16 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KSM-Pa-nop" userLabel="ButtonView">
-                                                        <rect key="frame" x="191" y="0.0" width="187" height="308.5"/>
+                                                        <rect key="frame" x="199" y="0.0" width="195" height="308.5"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="BB7-cE-a75">
-                                                                <rect key="frame" x="10" y="13" width="167" height="280.5"/>
+                                                                <rect key="frame" x="10" y="13" width="175" height="280.5"/>
                                                                 <subviews>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iCf-Sj-F3B">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="167" height="138"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="175" height="138"/>
                                                                         <subviews>
                                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="growth" translatesAutoresizingMaskIntoConstraints="NO" id="zFH-cZ-axF">
-                                                                                <rect key="frame" x="24" y="20" width="119" height="98"/>
+                                                                                <rect key="frame" x="24" y="20" width="127" height="98"/>
                                                                             </imageView>
                                                                         </subviews>
                                                                         <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="0.84170770969999997" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1905,10 +1902,7 @@
                                                                         </constraints>
                                                                     </view>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Calculate Initial Investment Amount" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="08e-Jl-R3f">
-                                                                        <rect key="frame" x="0.0" y="143" width="167" height="137.5"/>
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="width" constant="167" id="1W1-9a-F9Z"/>
-                                                                        </constraints>
+                                                                        <rect key="frame" x="0.0" y="143" width="175" height="137.5"/>
                                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                                         <color key="textColor" red="0.23921568630000001" green="0.30588235289999999" blue="0.43921568630000002" alpha="0.84170770969999997" colorSpace="custom" customColorSpace="displayP3"/>
                                                                         <nil key="highlightedColor"/>
@@ -1936,19 +1930,19 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="15A-Wg-0dl">
-                                                <rect key="frame" x="0.0" y="316.5" width="378" height="308.5"/>
+                                                <rect key="frame" x="0.0" y="316.5" width="394" height="308.5"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="krt-ea-qv0" userLabel="ButtonView">
-                                                        <rect key="frame" x="0.0" y="0.0" width="187" height="308.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="195" height="308.5"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="HQU-cT-V54">
-                                                                <rect key="frame" x="10" y="13" width="167" height="280.5"/>
+                                                                <rect key="frame" x="10" y="13" width="175" height="280.5"/>
                                                                 <subviews>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p6F-Rl-ah0">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="167" height="138"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="175" height="138"/>
                                                                         <subviews>
                                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hourglass" translatesAutoresizingMaskIntoConstraints="NO" id="1Ha-l5-iNt">
-                                                                                <rect key="frame" x="24" y="20" width="119" height="98"/>
+                                                                                <rect key="frame" x="24" y="20" width="127" height="98"/>
                                                                             </imageView>
                                                                         </subviews>
                                                                         <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="0.84170770969999997" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1960,10 +1954,7 @@
                                                                         </constraints>
                                                                     </view>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Calculate Duration  To Gain Future Value" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgO-G4-tR7">
-                                                                        <rect key="frame" x="0.0" y="143" width="167" height="137.5"/>
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="width" constant="167" id="dW4-DG-ceN"/>
-                                                                        </constraints>
+                                                                        <rect key="frame" x="0.0" y="143" width="175" height="137.5"/>
                                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                                         <color key="textColor" red="0.23921568630000001" green="0.30588235289999999" blue="0.43921568630000002" alpha="0.84170770969999997" colorSpace="custom" customColorSpace="displayP3"/>
                                                                         <nil key="highlightedColor"/>
@@ -1989,16 +1980,16 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RYI-ML-aGa" userLabel="ButtonView">
-                                                        <rect key="frame" x="191" y="0.0" width="187" height="308.5"/>
+                                                        <rect key="frame" x="199" y="0.0" width="195" height="308.5"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="hHI-3D-2Tp">
-                                                                <rect key="frame" x="10" y="13" width="167" height="280.5"/>
+                                                                <rect key="frame" x="10" y="13" width="175" height="280.5"/>
                                                                 <subviews>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fSK-Vr-6yM">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="167" height="138"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="175" height="138"/>
                                                                         <subviews>
                                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="interest" translatesAutoresizingMaskIntoConstraints="NO" id="9LB-II-YKO">
-                                                                                <rect key="frame" x="24" y="20" width="119" height="98"/>
+                                                                                <rect key="frame" x="24" y="20" width="127" height="98"/>
                                                                             </imageView>
                                                                         </subviews>
                                                                         <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="0.84170770969999997" colorSpace="custom" customColorSpace="displayP3"/>
@@ -2010,10 +2001,7 @@
                                                                         </constraints>
                                                                     </view>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Calculate Interest" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHK-zr-bgU">
-                                                                        <rect key="frame" x="0.0" y="143" width="167" height="137.5"/>
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="width" constant="167" id="UuZ-Aa-eQS"/>
-                                                                        </constraints>
+                                                                        <rect key="frame" x="0.0" y="143" width="175" height="137.5"/>
                                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                                         <color key="textColor" red="0.23921568630000001" green="0.30588235289999999" blue="0.43921568630000002" alpha="0.84170770969999997" colorSpace="custom" customColorSpace="displayP3"/>
                                                                         <nil key="highlightedColor"/>
@@ -2129,9 +2117,6 @@
                                                                     </view>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Calculate Payment Amount" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QzA-ZZ-l1X">
                                                                         <rect key="frame" x="0.0" y="143" width="175" height="137.5"/>
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="width" constant="167" id="j46-PB-ROM"/>
-                                                                        </constraints>
                                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                                         <color key="textColor" red="0.23921568630000001" green="0.30588235289999999" blue="0.43921568630000002" alpha="0.84170770969999997" colorSpace="custom" customColorSpace="displayP3"/>
                                                                         <nil key="highlightedColor"/>
@@ -2179,9 +2164,6 @@
                                                                     </view>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Calculate Number Of Payments" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qGA-Ag-91t">
                                                                         <rect key="frame" x="0.0" y="143" width="175" height="137.5"/>
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="width" constant="167" id="88K-2q-SG8"/>
-                                                                        </constraints>
                                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                                         <color key="textColor" red="0.23921568630000001" green="0.30588235289999999" blue="0.43921568630000002" alpha="0.84170770969999997" colorSpace="custom" customColorSpace="displayP3"/>
                                                                         <nil key="highlightedColor"/>
@@ -2234,9 +2216,6 @@
                                                                     </view>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Calculate Original Loan Amount" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7OI-OW-3EF">
                                                                         <rect key="frame" x="0.0" y="143" width="175" height="137.5"/>
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="width" constant="167" id="hjM-ed-Hob"/>
-                                                                        </constraints>
                                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                                         <color key="textColor" red="0.23921568630000001" green="0.30588235289999999" blue="0.43921568630000002" alpha="0.84170770969999997" colorSpace="custom" customColorSpace="displayP3"/>
                                                                         <nil key="highlightedColor"/>
@@ -2284,9 +2263,6 @@
                                                                     </view>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Calculate Interest" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EO2-Zn-NAF">
                                                                         <rect key="frame" x="0.0" y="143" width="175" height="137.5"/>
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="width" constant="167" id="8ZK-ln-yu5"/>
-                                                                        </constraints>
                                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                                         <color key="textColor" red="0.23921568630000001" green="0.30588235289999999" blue="0.43921568630000002" alpha="0.84170770969999997" colorSpace="custom" customColorSpace="displayP3"/>
                                                                         <nil key="highlightedColor"/>
@@ -2494,25 +2470,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Sj-80-31U">
-                                <rect key="frame" x="0.0" y="88" width="398" height="725"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="mOZ-gt-8GD">
-                                        <rect key="frame" x="10" y="50" width="378" height="625"/>
+                                        <rect key="frame" x="10" y="50" width="394" height="625"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="dDc-vv-EXc">
-                                                <rect key="frame" x="0.0" y="0.0" width="378" height="308.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="394" height="308.5"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IMp-M8-6jX" userLabel="ButtonView">
-                                                        <rect key="frame" x="0.0" y="0.0" width="187" height="308.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="195" height="308.5"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="8uM-7W-lm9">
-                                                                <rect key="frame" x="10" y="13" width="167" height="280.5"/>
+                                                                <rect key="frame" x="10" y="13" width="175" height="280.5"/>
                                                                 <subviews>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RKS-f2-e0g">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="167" height="138"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="175" height="138"/>
                                                                         <subviews>
                                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loan-4" translatesAutoresizingMaskIntoConstraints="NO" id="Wml-Wc-9Xn">
-                                                                                <rect key="frame" x="24" y="20" width="119" height="98"/>
+                                                                                <rect key="frame" x="24" y="20" width="127" height="98"/>
                                                                             </imageView>
                                                                         </subviews>
                                                                         <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="0.84170770969999997" colorSpace="custom" customColorSpace="displayP3"/>
@@ -2524,10 +2500,7 @@
                                                                         </constraints>
                                                                     </view>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="About Loan Calculator" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YD9-gv-zOe">
-                                                                        <rect key="frame" x="0.0" y="143" width="167" height="137.5"/>
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="width" constant="167" id="Hg1-zD-ex3"/>
-                                                                        </constraints>
+                                                                        <rect key="frame" x="0.0" y="143" width="175" height="137.5"/>
                                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                                         <color key="textColor" red="0.23921568630000001" green="0.30588235289999999" blue="0.43921568630000002" alpha="0.84170770969999997" colorSpace="custom" customColorSpace="displayP3"/>
                                                                         <nil key="highlightedColor"/>
@@ -2553,16 +2526,16 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="efD-DQ-8Ty" userLabel="ButtonView">
-                                                        <rect key="frame" x="191" y="0.0" width="187" height="308.5"/>
+                                                        <rect key="frame" x="199" y="0.0" width="195" height="308.5"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Um9-Nq-C62">
-                                                                <rect key="frame" x="10" y="13" width="167" height="280.5"/>
+                                                                <rect key="frame" x="10" y="13" width="175" height="280.5"/>
                                                                 <subviews>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="trg-gM-dWm">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="167" height="138"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="175" height="138"/>
                                                                         <subviews>
                                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="piggy-bank" translatesAutoresizingMaskIntoConstraints="NO" id="aAX-WA-KxV">
-                                                                                <rect key="frame" x="24" y="20" width="119" height="98"/>
+                                                                                <rect key="frame" x="24" y="20" width="127" height="98"/>
                                                                             </imageView>
                                                                         </subviews>
                                                                         <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="0.84170770969999997" colorSpace="custom" customColorSpace="displayP3"/>
@@ -2574,10 +2547,7 @@
                                                                         </constraints>
                                                                     </view>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="About Savings Calculator" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rX7-Ua-qGW">
-                                                                        <rect key="frame" x="0.0" y="143" width="167" height="137.5"/>
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="width" constant="167" id="4be-uD-dPJ"/>
-                                                                        </constraints>
+                                                                        <rect key="frame" x="0.0" y="143" width="175" height="137.5"/>
                                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                                         <color key="textColor" red="0.23921568630000001" green="0.30588235289999999" blue="0.43921568630000002" alpha="0.84170770969999997" colorSpace="custom" customColorSpace="displayP3"/>
                                                                         <nil key="highlightedColor"/>
@@ -2605,19 +2575,19 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="09h-2W-JSi">
-                                                <rect key="frame" x="0.0" y="316.5" width="378" height="308.5"/>
+                                                <rect key="frame" x="0.0" y="316.5" width="394" height="308.5"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CS1-sm-PJl" userLabel="ButtonView">
-                                                        <rect key="frame" x="0.0" y="0.0" width="187" height="308.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="195" height="308.5"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="lKZ-ZX-hA6">
-                                                                <rect key="frame" x="10" y="13" width="167" height="280.5"/>
+                                                                <rect key="frame" x="10" y="13" width="175" height="280.5"/>
                                                                 <subviews>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="obl-c5-KsX">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="167" height="138"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="175" height="138"/>
                                                                         <subviews>
                                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mortgage" translatesAutoresizingMaskIntoConstraints="NO" id="cL5-Fw-W1g">
-                                                                                <rect key="frame" x="24" y="20" width="119" height="98"/>
+                                                                                <rect key="frame" x="24" y="20" width="127" height="98"/>
                                                                             </imageView>
                                                                         </subviews>
                                                                         <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="0.84170770969999997" colorSpace="custom" customColorSpace="displayP3"/>
@@ -2629,10 +2599,7 @@
                                                                         </constraints>
                                                                     </view>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="About Mortgage Calculator" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sc1-6w-1qL">
-                                                                        <rect key="frame" x="0.0" y="143" width="167" height="137.5"/>
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="width" constant="167" id="X0a-UM-udG"/>
-                                                                        </constraints>
+                                                                        <rect key="frame" x="0.0" y="143" width="175" height="137.5"/>
                                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                                         <color key="textColor" red="0.23921568630000001" green="0.30588235289999999" blue="0.43921568630000002" alpha="0.84170770969999997" colorSpace="custom" customColorSpace="displayP3"/>
                                                                         <nil key="highlightedColor"/>
@@ -2658,16 +2625,16 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nuk-zc-a9E" userLabel="ButtonView">
-                                                        <rect key="frame" x="191" y="0.0" width="187" height="308.5"/>
+                                                        <rect key="frame" x="199" y="0.0" width="195" height="308.5"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="TJl-QF-4wm">
-                                                                <rect key="frame" x="10" y="13" width="167" height="280.5"/>
+                                                                <rect key="frame" x="10" y="13" width="175" height="280.5"/>
                                                                 <subviews>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O5r-0j-HMQ">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="167" height="138"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="175" height="138"/>
                                                                         <subviews>
                                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock" translatesAutoresizingMaskIntoConstraints="NO" id="Pv3-uf-z91">
-                                                                                <rect key="frame" x="24" y="20" width="119" height="98"/>
+                                                                                <rect key="frame" x="24" y="20" width="127" height="98"/>
                                                                             </imageView>
                                                                         </subviews>
                                                                         <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="0.84170770969999997" colorSpace="custom" customColorSpace="displayP3"/>
@@ -2679,10 +2646,7 @@
                                                                         </constraints>
                                                                     </view>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Calculation History" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EdA-yK-dj1">
-                                                                        <rect key="frame" x="0.0" y="143" width="167" height="137.5"/>
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="width" constant="167" id="ZMK-7e-95O"/>
-                                                                        </constraints>
+                                                                        <rect key="frame" x="0.0" y="143" width="175" height="137.5"/>
                                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                                         <color key="textColor" red="0.23921568630000001" green="0.30588235289999999" blue="0.43921568630000002" alpha="0.84170770969999997" colorSpace="custom" customColorSpace="displayP3"/>
                                                                         <nil key="highlightedColor"/>
