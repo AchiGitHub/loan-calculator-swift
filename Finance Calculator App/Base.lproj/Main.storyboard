@@ -37,8 +37,8 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Otd-fR-uDh">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="56" translatesAutoresizingMaskIntoConstraints="NO" id="rll-NL-Yrt">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="622"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rll-NL-Yrt">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="600"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pYs-Z4-RJy">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="350"/>
@@ -57,10 +57,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pOE-AQ-Ro8">
-                                                <rect key="frame" x="0.0" y="406" width="414" height="60"/>
+                                                <rect key="frame" x="0.0" y="350" width="414" height="150"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Finance Calculator" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WYp-Cl-hSS">
-                                                        <rect key="frame" x="34" y="6" width="346" height="48"/>
+                                                        <rect key="frame" x="75" y="18" width="265" height="115"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -68,19 +68,21 @@
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="60" id="2HT-vK-VPj"/>
-                                                    <constraint firstItem="WYp-Cl-hSS" firstAttribute="centerX" secondItem="pOE-AQ-Ro8" secondAttribute="centerX" id="fQ9-Td-ffN"/>
-                                                    <constraint firstItem="WYp-Cl-hSS" firstAttribute="centerY" secondItem="pOE-AQ-Ro8" secondAttribute="centerY" id="kgq-sK-n7x"/>
+                                                    <constraint firstAttribute="height" constant="150" id="2HT-vK-VPj"/>
+                                                    <constraint firstAttribute="trailing" secondItem="WYp-Cl-hSS" secondAttribute="trailing" constant="74" id="Hrx-bG-FDD"/>
+                                                    <constraint firstItem="WYp-Cl-hSS" firstAttribute="top" secondItem="pOE-AQ-Ro8" secondAttribute="top" constant="18" id="cJE-kT-vxf"/>
+                                                    <constraint firstItem="WYp-Cl-hSS" firstAttribute="leading" secondItem="pOE-AQ-Ro8" secondAttribute="leading" constant="75" id="e1y-8p-cYW"/>
+                                                    <constraint firstAttribute="bottom" secondItem="WYp-Cl-hSS" secondAttribute="bottom" constant="17" id="u7o-BQ-hY3"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0vz-Vl-xHz">
-                                                <rect key="frame" x="0.0" y="522" width="414" height="100"/>
+                                                <rect key="frame" x="0.0" y="500" width="414" height="100"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oJm-Sc-yKv">
-                                                        <rect key="frame" x="152" y="8" width="110" height="84"/>
+                                                        <rect key="frame" x="130" y="8" width="154" height="84"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LandingPage" translatesAutoresizingMaskIntoConstraints="NO" id="GnP-7g-eMY">
-                                                                <rect key="frame" x="8" y="8" width="94" height="68"/>
+                                                                <rect key="frame" x="8" y="8" width="138" height="68"/>
                                                             </imageView>
                                                         </subviews>
                                                         <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="0.84170770969999997" colorSpace="custom" customColorSpace="displayP3"/>
@@ -103,10 +105,10 @@
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="trailing" secondItem="oJm-Sc-yKv" secondAttribute="trailing" constant="152" id="1rW-vK-Ak6"/>
+                                                    <constraint firstAttribute="trailing" secondItem="oJm-Sc-yKv" secondAttribute="trailing" constant="130" id="1rW-vK-Ak6"/>
                                                     <constraint firstAttribute="height" constant="100" id="Sgy-yo-aru"/>
                                                     <constraint firstAttribute="bottom" secondItem="oJm-Sc-yKv" secondAttribute="bottom" constant="8" id="UnY-YM-iLG"/>
-                                                    <constraint firstItem="oJm-Sc-yKv" firstAttribute="leading" secondItem="0vz-Vl-xHz" secondAttribute="leading" constant="152" id="thA-XX-iTC"/>
+                                                    <constraint firstItem="oJm-Sc-yKv" firstAttribute="leading" secondItem="0vz-Vl-xHz" secondAttribute="leading" constant="130" id="thA-XX-iTC"/>
                                                     <constraint firstItem="oJm-Sc-yKv" firstAttribute="top" secondItem="0vz-Vl-xHz" secondAttribute="top" constant="8" id="zhT-Pq-3EN"/>
                                                 </constraints>
                                             </view>
@@ -196,25 +198,25 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="tFp-oH-F0j">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="700"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YQv-Ox-rJ7">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="700"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TZR-Dc-Eh6">
-                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="700"/>
                                                     </imageView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="HND-ta-1FM">
-                                                        <rect key="frame" x="10" y="30" width="394" height="760"/>
+                                                        <rect key="frame" x="10" y="30" width="394" height="660"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="CALCULATE PAYMENT AMOUNT ON LOAN" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Lt-vA-9l4">
-                                                                <rect key="frame" x="0.0" y="0.0" width="394" height="398"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="394" height="298"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Loan Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sv0-kY-xM6">
-                                                                <rect key="frame" x="0.0" y="408" width="394" height="30"/>
+                                                                <rect key="frame" x="0.0" y="308" width="394" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="dyS-ZU-kzk"/>
                                                                 </constraints>
@@ -223,7 +225,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tKr-Ah-Pw7">
-                                                                <rect key="frame" x="0.0" y="448" width="394" height="50"/>
+                                                                <rect key="frame" x="0.0" y="348" width="394" height="50"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="50" id="REh-pO-aib"/>
                                                                 </constraints>
@@ -231,7 +233,7 @@
                                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                             </textField>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="TM6-pj-1Db">
-                                                                <rect key="frame" x="0.0" y="508" width="394" height="21"/>
+                                                                <rect key="frame" x="0.0" y="408" width="394" height="21"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Interest Rate (%)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9DJ-Pt-Ne9">
                                                                         <rect key="frame" x="0.0" y="0.0" width="127.5" height="21"/>
@@ -258,7 +260,7 @@
                                                                 </constraints>
                                                             </stackView>
                                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1.5" minValue="0.0" maxValue="150" translatesAutoresizingMaskIntoConstraints="NO" id="z7O-pI-nRj">
-                                                                <rect key="frame" x="-2" y="539" width="398" height="61"/>
+                                                                <rect key="frame" x="-2" y="439" width="398" height="61"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="60" id="Igf-vh-UlR"/>
                                                                 </constraints>
@@ -269,7 +271,7 @@
                                                                 </connections>
                                                             </slider>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Number of Payments" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YN5-Jq-X6R">
-                                                                <rect key="frame" x="0.0" y="609" width="394" height="30"/>
+                                                                <rect key="frame" x="0.0" y="509" width="394" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="UPB-wz-rvT"/>
                                                                 </constraints>
@@ -278,7 +280,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oJK-Sx-rBi">
-                                                                <rect key="frame" x="0.0" y="649" width="394" height="50"/>
+                                                                <rect key="frame" x="0.0" y="549" width="394" height="50"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="50" id="zQc-bI-fEN"/>
                                                                 </constraints>
@@ -286,7 +288,7 @@
                                                                 <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                                                             </textField>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rc0-gN-TDO">
-                                                                <rect key="frame" x="0.0" y="709" width="394" height="51"/>
+                                                                <rect key="frame" x="0.0" y="609" width="394" height="51"/>
                                                                 <color key="backgroundColor" red="0.38587427140000002" green="0.37681865689999999" blue="0.61593395470000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="51" id="7NQ-nw-Zg4"/>
@@ -317,7 +319,7 @@
                                                     <constraint firstItem="TZR-Dc-Eh6" firstAttribute="top" secondItem="YQv-Ox-rJ7" secondAttribute="top" id="Tce-uV-ggz"/>
                                                     <constraint firstItem="HND-ta-1FM" firstAttribute="top" secondItem="YQv-Ox-rJ7" secondAttribute="top" constant="30" id="Xfg-ua-RhN"/>
                                                     <constraint firstAttribute="bottom" secondItem="HND-ta-1FM" secondAttribute="bottom" constant="10" id="gfE-Ug-pCv"/>
-                                                    <constraint firstAttribute="height" constant="800" id="rDd-GK-IU4"/>
+                                                    <constraint firstAttribute="height" constant="700" id="rDd-GK-IU4"/>
                                                     <constraint firstItem="HND-ta-1FM" firstAttribute="leading" secondItem="YQv-Ox-rJ7" secondAttribute="leading" constant="10" id="xAL-6Z-wUJ"/>
                                                 </constraints>
                                             </view>
@@ -369,25 +371,25 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2nr-8f-fKZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="700"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2IS-Ac-a4o">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="700"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tdE-xt-JnV">
-                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="700"/>
                                                     </imageView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1xl-AY-twg">
-                                                        <rect key="frame" x="10" y="10" width="394" height="780"/>
+                                                        <rect key="frame" x="10" y="10" width="394" height="680"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="CALCULATE NUMBER OF PAYMENTS" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xvq-wb-LTb">
-                                                                <rect key="frame" x="0.0" y="0.0" width="394" height="418"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="394" height="318"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Loan Amount (Rs.)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UHQ-MX-Twv">
-                                                                <rect key="frame" x="0.0" y="428" width="394" height="30"/>
+                                                                <rect key="frame" x="0.0" y="328" width="394" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="vsV-yT-c93"/>
                                                                 </constraints>
@@ -396,7 +398,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Lz-pN-nKD">
-                                                                <rect key="frame" x="0.0" y="468" width="394" height="50"/>
+                                                                <rect key="frame" x="0.0" y="368" width="394" height="50"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="50" id="3EJ-Gf-LN5"/>
                                                                 </constraints>
@@ -404,7 +406,7 @@
                                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                             </textField>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="nGh-uF-1Eg">
-                                                                <rect key="frame" x="0.0" y="528" width="394" height="21"/>
+                                                                <rect key="frame" x="0.0" y="428" width="394" height="21"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Interest Rate (%)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ko-hj-vnu">
                                                                         <rect key="frame" x="0.0" y="0.0" width="127.5" height="21"/>
@@ -430,7 +432,7 @@
                                                                 </constraints>
                                                             </stackView>
                                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="30" minValue="0.0" maxValue="150" translatesAutoresizingMaskIntoConstraints="NO" id="hsx-d1-0yL">
-                                                                <rect key="frame" x="-2" y="559" width="398" height="61"/>
+                                                                <rect key="frame" x="-2" y="459" width="398" height="61"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="60" id="Gus-m9-ZWL"/>
                                                                 </constraints>
@@ -441,7 +443,7 @@
                                                                 </connections>
                                                             </slider>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Monthly Payment Amount (Rs.)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PN3-th-PR9">
-                                                                <rect key="frame" x="0.0" y="629" width="394" height="30"/>
+                                                                <rect key="frame" x="0.0" y="529" width="394" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="obp-JU-jew"/>
                                                                 </constraints>
@@ -450,7 +452,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GOj-ZZ-Ksj">
-                                                                <rect key="frame" x="0.0" y="669" width="394" height="50"/>
+                                                                <rect key="frame" x="0.0" y="569" width="394" height="50"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="50" id="1ZD-qd-nFV"/>
                                                                 </constraints>
@@ -458,7 +460,7 @@
                                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                             </textField>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPt-pR-4gD">
-                                                                <rect key="frame" x="0.0" y="729" width="394" height="51"/>
+                                                                <rect key="frame" x="0.0" y="629" width="394" height="51"/>
                                                                 <color key="backgroundColor" red="0.38587427140000002" green="0.37681865689999999" blue="0.61593395470000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="51" id="0q1-3B-YMr"/>
@@ -482,7 +484,7 @@
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="800" id="3Tn-ly-xIU"/>
+                                                    <constraint firstAttribute="height" constant="700" id="3Tn-ly-xIU"/>
                                                     <constraint firstItem="1xl-AY-twg" firstAttribute="leading" secondItem="2IS-Ac-a4o" secondAttribute="leading" constant="10" id="Lwc-Bc-3nP"/>
                                                     <constraint firstAttribute="trailing" secondItem="1xl-AY-twg" secondAttribute="trailing" constant="10" id="Pq6-fs-xam"/>
                                                     <constraint firstAttribute="bottom" secondItem="1xl-AY-twg" secondAttribute="bottom" constant="10" id="YlH-2Y-KLM"/>
@@ -541,25 +543,25 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="5O9-ri-QFG">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="700"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="urc-2J-8no">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="700"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="caM-5l-5p4">
-                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="700"/>
                                                     </imageView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="sIz-W1-4Ag">
-                                                        <rect key="frame" x="10" y="10" width="394" height="780"/>
+                                                        <rect key="frame" x="10" y="10" width="394" height="680"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="CALCULATE INTEREST" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ti9-fd-auP">
-                                                                <rect key="frame" x="0.0" y="0.0" width="394" height="419"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="394" height="319"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Loan Amount (Rs.)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yo2-3e-ZWu">
-                                                                <rect key="frame" x="0.0" y="429" width="394" height="30"/>
+                                                                <rect key="frame" x="0.0" y="329" width="394" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="lMG-hb-Zes"/>
                                                                 </constraints>
@@ -568,7 +570,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9NP-yk-Gdk">
-                                                                <rect key="frame" x="0.0" y="469" width="394" height="50"/>
+                                                                <rect key="frame" x="0.0" y="369" width="394" height="50"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="50" id="nxV-Ie-qPP"/>
                                                                 </constraints>
@@ -576,7 +578,7 @@
                                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                             </textField>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Payment Amount (Rs.)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xyS-V8-tac">
-                                                                <rect key="frame" x="0.0" y="529" width="394" height="30"/>
+                                                                <rect key="frame" x="0.0" y="429" width="394" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="GUo-n3-uR3"/>
                                                                 </constraints>
@@ -585,7 +587,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lRO-QI-MHY">
-                                                                <rect key="frame" x="0.0" y="569" width="394" height="50"/>
+                                                                <rect key="frame" x="0.0" y="469" width="394" height="50"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="50" id="C4E-Wu-9Fr"/>
                                                                 </constraints>
@@ -593,7 +595,7 @@
                                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                             </textField>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Number of Payments" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f1G-Ow-QVz">
-                                                                <rect key="frame" x="0.0" y="629" width="394" height="30"/>
+                                                                <rect key="frame" x="0.0" y="529" width="394" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="aZE-wm-usI"/>
                                                                 </constraints>
@@ -602,7 +604,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ad3-uH-qgr">
-                                                                <rect key="frame" x="0.0" y="669" width="394" height="50"/>
+                                                                <rect key="frame" x="0.0" y="569" width="394" height="50"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="50" id="GOV-fX-97k"/>
                                                                 </constraints>
@@ -610,7 +612,7 @@
                                                                 <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                                                             </textField>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2BC-0u-bgT">
-                                                                <rect key="frame" x="0.0" y="729" width="394" height="51"/>
+                                                                <rect key="frame" x="0.0" y="629" width="394" height="51"/>
                                                                 <color key="backgroundColor" red="0.38587427140000002" green="0.37681865689999999" blue="0.61593395470000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="51" id="btF-bb-vx1"/>
@@ -637,7 +639,7 @@
                                                     <constraint firstAttribute="bottom" secondItem="caM-5l-5p4" secondAttribute="bottom" id="27S-g7-gDv"/>
                                                     <constraint firstAttribute="trailing" secondItem="sIz-W1-4Ag" secondAttribute="trailing" constant="10" id="4dC-t4-rRc"/>
                                                     <constraint firstItem="sIz-W1-4Ag" firstAttribute="top" secondItem="urc-2J-8no" secondAttribute="top" constant="10" id="Gvo-ug-fCP"/>
-                                                    <constraint firstAttribute="height" constant="800" id="OsW-Y1-mS0"/>
+                                                    <constraint firstAttribute="height" constant="700" id="OsW-Y1-mS0"/>
                                                     <constraint firstAttribute="bottom" secondItem="sIz-W1-4Ag" secondAttribute="bottom" constant="10" id="aSw-Qv-3tg"/>
                                                     <constraint firstItem="caM-5l-5p4" firstAttribute="leading" secondItem="urc-2J-8no" secondAttribute="leading" id="cNI-01-mWW"/>
                                                     <constraint firstItem="caM-5l-5p4" firstAttribute="top" secondItem="urc-2J-8no" secondAttribute="top" id="dxJ-K7-Tue"/>
@@ -692,25 +694,25 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Vrj-mv-nBh">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="700"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CPj-go-krp">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="700"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jDl-j2-nzP">
-                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="700"/>
                                                     </imageView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="r7t-Vd-NTP">
-                                                        <rect key="frame" x="10" y="10" width="394" height="780"/>
+                                                        <rect key="frame" x="10" y="10" width="394" height="680"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="CALCULATE ORIGINAL LOAN AMOUNT" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGk-ws-Hrm">
-                                                                <rect key="frame" x="0.0" y="0.0" width="394" height="418"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="394" height="318"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Payment Amount (Rs.)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t0N-pH-jEu">
-                                                                <rect key="frame" x="0.0" y="428" width="394" height="30"/>
+                                                                <rect key="frame" x="0.0" y="328" width="394" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="Qf5-X3-fbT"/>
                                                                 </constraints>
@@ -719,7 +721,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jzf-OO-kFj">
-                                                                <rect key="frame" x="0.0" y="468" width="394" height="50"/>
+                                                                <rect key="frame" x="0.0" y="368" width="394" height="50"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="50" id="W9w-Fv-rZq"/>
                                                                 </constraints>
@@ -727,7 +729,7 @@
                                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                             </textField>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="vJj-2a-REq">
-                                                                <rect key="frame" x="0.0" y="528" width="394" height="21"/>
+                                                                <rect key="frame" x="0.0" y="428" width="394" height="21"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Interest Rate (%)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BKD-3A-LQw">
                                                                         <rect key="frame" x="0.0" y="0.0" width="127.5" height="21"/>
@@ -754,7 +756,7 @@
                                                                 </constraints>
                                                             </stackView>
                                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1.5" minValue="0.001" maxValue="150" translatesAutoresizingMaskIntoConstraints="NO" id="IPe-Wt-lLZ">
-                                                                <rect key="frame" x="-2" y="559" width="398" height="61"/>
+                                                                <rect key="frame" x="-2" y="459" width="398" height="61"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="60" id="C3b-dK-oCg"/>
                                                                 </constraints>
@@ -765,7 +767,7 @@
                                                                 </connections>
                                                             </slider>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Number of Payments" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MCc-Zo-tPS">
-                                                                <rect key="frame" x="0.0" y="629" width="394" height="30"/>
+                                                                <rect key="frame" x="0.0" y="529" width="394" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="wL3-qE-REo"/>
                                                                 </constraints>
@@ -774,7 +776,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0WR-oW-mwn">
-                                                                <rect key="frame" x="0.0" y="669" width="394" height="50"/>
+                                                                <rect key="frame" x="0.0" y="569" width="394" height="50"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="50" id="tm9-hO-D4M"/>
                                                                 </constraints>
@@ -782,7 +784,7 @@
                                                                 <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                                                             </textField>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="08Z-Ax-cOc">
-                                                                <rect key="frame" x="0.0" y="729" width="394" height="51"/>
+                                                                <rect key="frame" x="0.0" y="629" width="394" height="51"/>
                                                                 <color key="backgroundColor" red="0.38587427140000002" green="0.37681865689999999" blue="0.61593395470000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="51" id="vp5-Av-cbc"/>
@@ -813,7 +815,7 @@
                                                     <constraint firstItem="r7t-Vd-NTP" firstAttribute="top" secondItem="CPj-go-krp" secondAttribute="top" constant="10" id="VcF-Kq-6gf"/>
                                                     <constraint firstAttribute="bottom" secondItem="jDl-j2-nzP" secondAttribute="bottom" id="ZPQ-Ti-5dX"/>
                                                     <constraint firstItem="jDl-j2-nzP" firstAttribute="top" secondItem="CPj-go-krp" secondAttribute="top" id="bmw-Gz-23c"/>
-                                                    <constraint firstAttribute="height" constant="800" id="dc6-hU-RWV"/>
+                                                    <constraint firstAttribute="height" constant="700" id="dc6-hU-RWV"/>
                                                     <constraint firstItem="jDl-j2-nzP" firstAttribute="leading" secondItem="CPj-go-krp" secondAttribute="leading" id="rHL-CD-9UG"/>
                                                 </constraints>
                                             </view>
@@ -943,25 +945,25 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="s1g-GI-Oi9">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="900"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="700"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oJB-rr-u9A">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="900"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="700"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kmP-gh-ts4">
-                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="900"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="700"/>
                                                     </imageView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="RX6-T5-vqe">
-                                                        <rect key="frame" x="10" y="0.0" width="394" height="890"/>
+                                                        <rect key="frame" x="10" y="0.0" width="394" height="690"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="CALCULATE MORTGAGE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K0x-PX-vdq">
-                                                                <rect key="frame" x="0.0" y="0.0" width="394" height="369"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="394" height="169"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Payment Amount" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ea-vI-ii3">
-                                                                <rect key="frame" x="0.0" y="379" width="394" height="50"/>
+                                                                <rect key="frame" x="0.0" y="179" width="394" height="50"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="50" id="GLw-5S-2PE"/>
                                                                 </constraints>
@@ -970,7 +972,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Rs. 17861.22" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bS6-Rf-fWo">
-                                                                <rect key="frame" x="0.0" y="439" width="394" height="150"/>
+                                                                <rect key="frame" x="0.0" y="239" width="394" height="150"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="150" id="zTR-Mv-NXH"/>
                                                                 </constraints>
@@ -979,7 +981,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Home Price (Rs.)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pnT-r3-ONC">
-                                                                <rect key="frame" x="0.0" y="599" width="394" height="30"/>
+                                                                <rect key="frame" x="0.0" y="399" width="394" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="S1U-W7-dpQ"/>
                                                                 </constraints>
@@ -988,7 +990,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="600000" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ybJ-NL-PjW">
-                                                                <rect key="frame" x="0.0" y="639" width="394" height="50"/>
+                                                                <rect key="frame" x="0.0" y="439" width="394" height="50"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="50" id="Nxy-Cg-Waz"/>
                                                                 </constraints>
@@ -999,7 +1001,7 @@
                                                                 </connections>
                                                             </textField>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Jf9-tN-IXR">
-                                                                <rect key="frame" x="0.0" y="699" width="394" height="21"/>
+                                                                <rect key="frame" x="0.0" y="499" width="394" height="21"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Interest Rate (%)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iiG-P3-llB">
                                                                         <rect key="frame" x="0.0" y="0.0" width="127.5" height="21"/>
@@ -1027,7 +1029,7 @@
                                                                 </constraints>
                                                             </stackView>
                                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="24" minValue="0.001" maxValue="150" translatesAutoresizingMaskIntoConstraints="NO" id="I6K-7C-6Zd">
-                                                                <rect key="frame" x="-2" y="730" width="398" height="61"/>
+                                                                <rect key="frame" x="-2" y="530" width="398" height="61"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="60" id="GjM-wP-WCj"/>
                                                                 </constraints>
@@ -1038,7 +1040,7 @@
                                                                 </connections>
                                                             </slider>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Length Of Loan (Years)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y9g-ZS-62b">
-                                                                <rect key="frame" x="0.0" y="800" width="394" height="30"/>
+                                                                <rect key="frame" x="0.0" y="600" width="394" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="NFB-yC-tDX"/>
                                                                 </constraints>
@@ -1047,7 +1049,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="5" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BQW-bS-3Wp">
-                                                                <rect key="frame" x="0.0" y="840" width="394" height="50"/>
+                                                                <rect key="frame" x="0.0" y="640" width="394" height="50"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="50" id="cW5-4s-VD6"/>
                                                                 </constraints>
@@ -1069,7 +1071,7 @@
                                                     <constraint firstAttribute="trailing" secondItem="RX6-T5-vqe" secondAttribute="trailing" constant="10" id="bCp-zJ-TZz"/>
                                                     <constraint firstAttribute="trailing" secondItem="kmP-gh-ts4" secondAttribute="trailing" id="beb-3Y-pjV"/>
                                                     <constraint firstItem="kmP-gh-ts4" firstAttribute="top" secondItem="oJB-rr-u9A" secondAttribute="top" id="k0x-N9-iV4"/>
-                                                    <constraint firstAttribute="height" constant="900" id="k6t-Cn-bfT"/>
+                                                    <constraint firstAttribute="height" constant="700" id="k6t-Cn-bfT"/>
                                                     <constraint firstItem="kmP-gh-ts4" firstAttribute="leading" secondItem="oJB-rr-u9A" secondAttribute="leading" id="nji-F2-XiY"/>
                                                     <constraint firstItem="RX6-T5-vqe" firstAttribute="top" secondItem="oJB-rr-u9A" secondAttribute="top" id="zSL-mT-y0w"/>
                                                 </constraints>
@@ -1124,25 +1126,25 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hNo-BR-2NY">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="700"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3aJ-xK-Wc7">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="700"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FfZ-ml-UmC">
-                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="700"/>
                                                     </imageView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2aP-hr-TZ5">
-                                                        <rect key="frame" x="10" y="10" width="394" height="780"/>
+                                                        <rect key="frame" x="10" y="10" width="394" height="680"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="CALCULATE DURATION OF INVESTMENT" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d98-2O-vbx">
-                                                                <rect key="frame" x="0.0" y="0.0" width="394" height="418"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="394" height="318"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Initial Investment (Rs.)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nWM-ad-tCm">
-                                                                <rect key="frame" x="0.0" y="428" width="394" height="30"/>
+                                                                <rect key="frame" x="0.0" y="328" width="394" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="I9Y-eR-ehy"/>
                                                                 </constraints>
@@ -1151,7 +1153,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K6U-3A-IBN">
-                                                                <rect key="frame" x="0.0" y="468" width="394" height="50"/>
+                                                                <rect key="frame" x="0.0" y="368" width="394" height="50"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="50" id="BNB-Fy-pvq"/>
                                                                 </constraints>
@@ -1159,7 +1161,7 @@
                                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                             </textField>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Pcp-wy-JDg">
-                                                                <rect key="frame" x="0.0" y="528" width="394" height="21"/>
+                                                                <rect key="frame" x="0.0" y="428" width="394" height="21"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Interest Rate (%)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdQ-IO-jfz">
                                                                         <rect key="frame" x="0.0" y="0.0" width="127.5" height="21"/>
@@ -1181,7 +1183,7 @@
                                                                 </constraints>
                                                             </stackView>
                                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="30" minValue="0.001" maxValue="150" translatesAutoresizingMaskIntoConstraints="NO" id="8Rx-j4-Okr">
-                                                                <rect key="frame" x="-2" y="559" width="398" height="61"/>
+                                                                <rect key="frame" x="-2" y="459" width="398" height="61"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="60" id="bdY-hU-L1V"/>
                                                                 </constraints>
@@ -1192,7 +1194,7 @@
                                                                 </connections>
                                                             </slider>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Future Value (Rs.)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RVQ-sz-M7a">
-                                                                <rect key="frame" x="0.0" y="629" width="394" height="30"/>
+                                                                <rect key="frame" x="0.0" y="529" width="394" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="lIk-dh-sm7"/>
                                                                 </constraints>
@@ -1201,7 +1203,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sEV-AT-AQv">
-                                                                <rect key="frame" x="0.0" y="669" width="394" height="50"/>
+                                                                <rect key="frame" x="0.0" y="569" width="394" height="50"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="50" id="23j-iE-2ju"/>
                                                                 </constraints>
@@ -1209,7 +1211,7 @@
                                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                             </textField>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4FR-XA-l7B">
-                                                                <rect key="frame" x="0.0" y="729" width="394" height="51"/>
+                                                                <rect key="frame" x="0.0" y="629" width="394" height="51"/>
                                                                 <color key="backgroundColor" red="0.38587427140000002" green="0.37681865689999999" blue="0.61593395470000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="51" id="5gq-fF-DIU"/>
@@ -1241,7 +1243,7 @@
                                                     <constraint firstItem="FfZ-ml-UmC" firstAttribute="leading" secondItem="3aJ-xK-Wc7" secondAttribute="leading" id="Tkh-ff-H3C"/>
                                                     <constraint firstAttribute="trailing" secondItem="FfZ-ml-UmC" secondAttribute="trailing" id="ihD-ge-1fz"/>
                                                     <constraint firstAttribute="bottom" secondItem="2aP-hr-TZ5" secondAttribute="bottom" constant="10" id="jhF-RV-c7y"/>
-                                                    <constraint firstAttribute="height" constant="800" id="lE3-cX-4UG"/>
+                                                    <constraint firstAttribute="height" constant="700" id="lE3-cX-4UG"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -1292,25 +1294,25 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ZJt-1g-PHb">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="700"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WOj-QI-Jct">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="700"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yza-Fh-jkb">
-                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="700"/>
                                                     </imageView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ivc-qc-mrJ">
-                                                        <rect key="frame" x="10" y="10" width="394" height="780"/>
+                                                        <rect key="frame" x="10" y="10" width="394" height="680"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="CALCULATE INTEREST ON INVESTMENT" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bph-cD-HnZ">
-                                                                <rect key="frame" x="0.0" y="0.0" width="394" height="419"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="394" height="319"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Investment Amount (Rs.)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eDn-F0-Xgo">
-                                                                <rect key="frame" x="0.0" y="429" width="394" height="30"/>
+                                                                <rect key="frame" x="0.0" y="329" width="394" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="ycd-vI-oQ5"/>
                                                                 </constraints>
@@ -1319,7 +1321,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rhC-MU-c3m">
-                                                                <rect key="frame" x="0.0" y="469" width="394" height="50"/>
+                                                                <rect key="frame" x="0.0" y="369" width="394" height="50"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="50" id="izA-iw-ocu"/>
                                                                 </constraints>
@@ -1327,7 +1329,7 @@
                                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                             </textField>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Future Value (Rs.)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tH5-bf-HCl">
-                                                                <rect key="frame" x="0.0" y="529" width="394" height="30"/>
+                                                                <rect key="frame" x="0.0" y="429" width="394" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="HXu-TT-JbL"/>
                                                                 </constraints>
@@ -1336,7 +1338,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uOl-TZ-M4z">
-                                                                <rect key="frame" x="0.0" y="569" width="394" height="50"/>
+                                                                <rect key="frame" x="0.0" y="469" width="394" height="50"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="50" id="upG-Bo-Ipu"/>
                                                                 </constraints>
@@ -1344,7 +1346,7 @@
                                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                             </textField>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Duration (Years)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ANS-Nf-Ct2">
-                                                                <rect key="frame" x="0.0" y="629" width="394" height="30"/>
+                                                                <rect key="frame" x="0.0" y="529" width="394" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="qh1-og-rCu"/>
                                                                 </constraints>
@@ -1353,7 +1355,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DcZ-mT-aol">
-                                                                <rect key="frame" x="0.0" y="669" width="394" height="50"/>
+                                                                <rect key="frame" x="0.0" y="569" width="394" height="50"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="50" id="IKI-G8-JAK"/>
                                                                 </constraints>
@@ -1361,7 +1363,7 @@
                                                                 <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                                                             </textField>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="smI-K7-jYI">
-                                                                <rect key="frame" x="0.0" y="729" width="394" height="51"/>
+                                                                <rect key="frame" x="0.0" y="629" width="394" height="51"/>
                                                                 <color key="backgroundColor" red="0.38587427140000002" green="0.37681865689999999" blue="0.61593395470000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="51" id="yJo-fZ-uwR"/>
@@ -1388,7 +1390,7 @@
                                                     <constraint firstAttribute="bottom" secondItem="yza-Fh-jkb" secondAttribute="bottom" id="8DV-hX-io4"/>
                                                     <constraint firstAttribute="bottom" secondItem="ivc-qc-mrJ" secondAttribute="bottom" constant="10" id="Hcy-lw-eXn"/>
                                                     <constraint firstItem="ivc-qc-mrJ" firstAttribute="top" secondItem="WOj-QI-Jct" secondAttribute="top" constant="10" id="IU2-PA-M9E"/>
-                                                    <constraint firstAttribute="height" constant="800" id="MrG-cH-IbV"/>
+                                                    <constraint firstAttribute="height" constant="700" id="MrG-cH-IbV"/>
                                                     <constraint firstAttribute="trailing" secondItem="ivc-qc-mrJ" secondAttribute="trailing" constant="10" id="P91-LS-s7B"/>
                                                     <constraint firstAttribute="trailing" secondItem="yza-Fh-jkb" secondAttribute="trailing" id="S7L-qC-VcB"/>
                                                     <constraint firstItem="yza-Fh-jkb" firstAttribute="leading" secondItem="WOj-QI-Jct" secondAttribute="leading" id="bog-2X-OMB"/>
@@ -1443,25 +1445,25 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="t1q-IE-ehm">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="700"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fM0-US-g2p">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="700"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dR1-O3-k1I">
-                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="700"/>
                                                     </imageView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="HUM-QZ-TfZ">
-                                                        <rect key="frame" x="10" y="10" width="394" height="780"/>
+                                                        <rect key="frame" x="10" y="10" width="394" height="680"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="CALCULATE INVESTMENT AMOUNT" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffC-nh-weJ">
-                                                                <rect key="frame" x="0.0" y="0.0" width="394" height="418"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="394" height="318"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Future Value (Rs.)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1s9-TK-6qw">
-                                                                <rect key="frame" x="0.0" y="428" width="394" height="30"/>
+                                                                <rect key="frame" x="0.0" y="328" width="394" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="8jW-hV-vDa"/>
                                                                 </constraints>
@@ -1470,7 +1472,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4wX-8O-LYP">
-                                                                <rect key="frame" x="0.0" y="468" width="394" height="50"/>
+                                                                <rect key="frame" x="0.0" y="368" width="394" height="50"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="50" id="hc1-yJ-65A"/>
                                                                 </constraints>
@@ -1478,7 +1480,7 @@
                                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                             </textField>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="CtT-4g-N0s">
-                                                                <rect key="frame" x="0.0" y="528" width="394" height="21"/>
+                                                                <rect key="frame" x="0.0" y="428" width="394" height="21"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Interest Rate (%)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FbH-oI-MkI">
                                                                         <rect key="frame" x="0.0" y="0.0" width="127.5" height="21"/>
@@ -1500,7 +1502,7 @@
                                                                 </constraints>
                                                             </stackView>
                                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1.5" minValue="0.001" maxValue="150" translatesAutoresizingMaskIntoConstraints="NO" id="wWt-QE-37V">
-                                                                <rect key="frame" x="-2" y="559" width="398" height="61"/>
+                                                                <rect key="frame" x="-2" y="459" width="398" height="61"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="60" id="maC-KJ-am1"/>
                                                                 </constraints>
@@ -1511,7 +1513,7 @@
                                                                 </connections>
                                                             </slider>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Duration (Years)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GuZ-Ou-9nl">
-                                                                <rect key="frame" x="0.0" y="629" width="394" height="30"/>
+                                                                <rect key="frame" x="0.0" y="529" width="394" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="IoY-Bw-6bv"/>
                                                                 </constraints>
@@ -1520,7 +1522,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U2q-bj-s1S">
-                                                                <rect key="frame" x="0.0" y="669" width="394" height="50"/>
+                                                                <rect key="frame" x="0.0" y="569" width="394" height="50"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="50" id="IoI-LJ-iUs"/>
                                                                 </constraints>
@@ -1528,7 +1530,7 @@
                                                                 <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                                                             </textField>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dis-Kg-dP4">
-                                                                <rect key="frame" x="0.0" y="729" width="394" height="51"/>
+                                                                <rect key="frame" x="0.0" y="629" width="394" height="51"/>
                                                                 <color key="backgroundColor" red="0.38587427140000002" green="0.37681865689999999" blue="0.61593395470000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="51" id="5UU-Al-paf"/>
@@ -1557,7 +1559,7 @@
                                                     <constraint firstAttribute="bottom" secondItem="dR1-O3-k1I" secondAttribute="bottom" id="PQd-fE-PWF"/>
                                                     <constraint firstAttribute="trailing" secondItem="HUM-QZ-TfZ" secondAttribute="trailing" constant="10" id="Rai-6W-JlJ"/>
                                                     <constraint firstItem="HUM-QZ-TfZ" firstAttribute="leading" secondItem="fM0-US-g2p" secondAttribute="leading" constant="10" id="cbV-rw-iQ3"/>
-                                                    <constraint firstAttribute="height" constant="800" id="f44-aa-f8u"/>
+                                                    <constraint firstAttribute="height" constant="700" id="f44-aa-f8u"/>
                                                     <constraint firstItem="dR1-O3-k1I" firstAttribute="top" secondItem="fM0-US-g2p" secondAttribute="top" id="fzA-GP-jst"/>
                                                     <constraint firstAttribute="bottom" secondItem="HUM-QZ-TfZ" secondAttribute="bottom" constant="10" id="rRu-39-0Qn"/>
                                                     <constraint firstAttribute="trailing" secondItem="dR1-O3-k1I" secondAttribute="trailing" id="vL7-Z7-t24"/>
@@ -1630,25 +1632,25 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="GZA-nG-eO9">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="700"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3iP-Bu-yd5">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="700"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="edR-Nd-69d">
-                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="700"/>
                                                     </imageView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="y33-jM-BWg">
-                                                        <rect key="frame" x="10" y="10" width="394" height="780"/>
+                                                        <rect key="frame" x="10" y="10" width="394" height="680"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="CALCULATE TOTAL FUTURE VALUE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vk3-e2-Z2L">
-                                                                <rect key="frame" x="0.0" y="0.0" width="394" height="268"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="394" height="168"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Initial Investment (Rs.)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vfg-iB-HWE">
-                                                                <rect key="frame" x="0.0" y="278" width="394" height="30"/>
+                                                                <rect key="frame" x="0.0" y="178" width="394" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="j2C-lK-Zq5"/>
                                                                 </constraints>
@@ -1657,7 +1659,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SHz-76-2uo">
-                                                                <rect key="frame" x="0.0" y="318" width="394" height="50"/>
+                                                                <rect key="frame" x="0.0" y="218" width="394" height="50"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="50" id="eD7-sb-1EY"/>
                                                                 </constraints>
@@ -1665,7 +1667,7 @@
                                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                             </textField>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Tsb-gR-gvg">
-                                                                <rect key="frame" x="0.0" y="378" width="394" height="21"/>
+                                                                <rect key="frame" x="0.0" y="278" width="394" height="21"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Interest Rate (%)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y9x-g3-06l">
                                                                         <rect key="frame" x="0.0" y="0.0" width="127.5" height="21"/>
@@ -1687,7 +1689,7 @@
                                                                 </constraints>
                                                             </stackView>
                                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1.5" minValue="0.001" maxValue="150" translatesAutoresizingMaskIntoConstraints="NO" id="Z1q-Xe-b46">
-                                                                <rect key="frame" x="-2" y="409" width="398" height="61"/>
+                                                                <rect key="frame" x="-2" y="309" width="398" height="61"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="60" id="jkr-lF-kA5"/>
                                                                 </constraints>
@@ -1698,7 +1700,7 @@
                                                                 </connections>
                                                             </slider>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Monthly Payment Amount (Rs.)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jp1-YK-a2T">
-                                                                <rect key="frame" x="0.0" y="479" width="394" height="30"/>
+                                                                <rect key="frame" x="0.0" y="379" width="394" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="qvm-Kj-yIB"/>
                                                                 </constraints>
@@ -1707,7 +1709,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EsI-IJ-P10">
-                                                                <rect key="frame" x="0.0" y="519" width="394" height="50"/>
+                                                                <rect key="frame" x="0.0" y="419" width="394" height="50"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="50" id="b0H-0N-dCr"/>
                                                                 </constraints>
@@ -1715,7 +1717,7 @@
                                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                             </textField>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Duration (Years)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6RE-En-xQ8">
-                                                                <rect key="frame" x="0.0" y="579" width="394" height="30"/>
+                                                                <rect key="frame" x="0.0" y="479" width="394" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="eI1-9X-Fm3"/>
                                                                 </constraints>
@@ -1724,7 +1726,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fw1-64-rB4">
-                                                                <rect key="frame" x="0.0" y="619" width="394" height="50"/>
+                                                                <rect key="frame" x="0.0" y="519" width="394" height="50"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="50" id="YPY-Fy-K9D"/>
                                                                 </constraints>
@@ -1732,7 +1734,7 @@
                                                                 <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                                                             </textField>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="K0r-V5-00U">
-                                                                <rect key="frame" x="0.0" y="679" width="394" height="40"/>
+                                                                <rect key="frame" x="0.0" y="579" width="394" height="40"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Payment done at" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gda-Vt-pOy">
                                                                         <rect key="frame" x="0.0" y="0.0" width="129.5" height="40"/>
@@ -1758,7 +1760,7 @@
                                                                 </constraints>
                                                             </stackView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UdQ-wl-eRk">
-                                                                <rect key="frame" x="0.0" y="729" width="394" height="51"/>
+                                                                <rect key="frame" x="0.0" y="629" width="394" height="51"/>
                                                                 <color key="backgroundColor" red="0.38823529411764707" green="0.36862745098039218" blue="0.61568627450980395" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="51" id="Fb0-Ry-oyx"/>
@@ -1785,7 +1787,7 @@
                                                     <constraint firstItem="edR-Nd-69d" firstAttribute="leading" secondItem="3iP-Bu-yd5" secondAttribute="leading" id="AC5-LL-9eh"/>
                                                     <constraint firstItem="y33-jM-BWg" firstAttribute="leading" secondItem="3iP-Bu-yd5" secondAttribute="leading" constant="10" id="Awu-84-Zpl"/>
                                                     <constraint firstAttribute="trailing" secondItem="edR-Nd-69d" secondAttribute="trailing" id="Jgc-Qx-gFs"/>
-                                                    <constraint firstAttribute="height" constant="800" id="JuG-mE-iz4"/>
+                                                    <constraint firstAttribute="height" constant="700" id="JuG-mE-iz4"/>
                                                     <constraint firstAttribute="trailing" secondItem="y33-jM-BWg" secondAttribute="trailing" constant="10" id="XhU-fC-rj9"/>
                                                     <constraint firstItem="y33-jM-BWg" firstAttribute="top" secondItem="3iP-Bu-yd5" secondAttribute="top" constant="10" id="dl6-90-mda"/>
                                                     <constraint firstAttribute="bottom" secondItem="edR-Nd-69d" secondAttribute="bottom" id="l3g-HE-oLQ"/>
@@ -2130,7 +2132,7 @@
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pfD-wy-hbH">
                                                                         <rect key="frame" x="0.0" y="0.0" width="167" height="138"/>
                                                                         <subviews>
-                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="futureValue" translatesAutoresizingMaskIntoConstraints="NO" id="gbz-g6-fWJ">
+                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="payment" translatesAutoresizingMaskIntoConstraints="NO" id="gbz-g6-fWJ">
                                                                                 <rect key="frame" x="24" y="20" width="119" height="98"/>
                                                                             </imageView>
                                                                         </subviews>
@@ -2180,7 +2182,7 @@
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4SW-sH-09v">
                                                                         <rect key="frame" x="0.0" y="0.0" width="167" height="138"/>
                                                                         <subviews>
-                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="growth" translatesAutoresizingMaskIntoConstraints="NO" id="AaY-c1-6KB">
+                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="salary" translatesAutoresizingMaskIntoConstraints="NO" id="AaY-c1-6KB">
                                                                                 <rect key="frame" x="24" y="20" width="119" height="98"/>
                                                                             </imageView>
                                                                         </subviews>
@@ -2235,7 +2237,7 @@
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ty-ec-YGa">
                                                                         <rect key="frame" x="0.0" y="0.0" width="167" height="138"/>
                                                                         <subviews>
-                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hourglass" translatesAutoresizingMaskIntoConstraints="NO" id="yO0-41-fVN">
+                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loan" translatesAutoresizingMaskIntoConstraints="NO" id="yO0-41-fVN">
                                                                                 <rect key="frame" x="24" y="20" width="119" height="98"/>
                                                                             </imageView>
                                                                         </subviews>
@@ -2285,7 +2287,7 @@
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tke-HF-3jM">
                                                                         <rect key="frame" x="0.0" y="0.0" width="167" height="138"/>
                                                                         <subviews>
-                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="interest" translatesAutoresizingMaskIntoConstraints="NO" id="dTM-MO-j6f">
+                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="interest-rate" translatesAutoresizingMaskIntoConstraints="NO" id="dTM-MO-j6f">
                                                                                 <rect key="frame" x="24" y="20" width="119" height="98"/>
                                                                             </imageView>
                                                                         </subviews>
@@ -2351,7 +2353,7 @@
                             <constraint firstItem="beV-Vv-p1k" firstAttribute="top" secondItem="R6U-Q0-oQ0" secondAttribute="top" id="v5y-ez-SYC"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Savings" id="hbc-Ru-0Y2"/>
+                    <navigationItem key="navigationItem" title="Loans" id="hbc-Ru-0Y2" userLabel="Loans"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P9J-T5-mXs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="rJl-V9-k1H">
@@ -2397,7 +2399,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="BKE-Lf-YNP"/>
+        <segue reference="yA5-T6-pVF"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="LandingPage" width="256" height="256"/>
@@ -2409,7 +2411,11 @@
         <image name="hourglass" width="256" height="256"/>
         <image name="info.circle" catalog="system" width="128" height="121"/>
         <image name="interest" width="256" height="256"/>
+        <image name="interest-rate" width="256" height="256"/>
+        <image name="loan" width="256" height="256"/>
+        <image name="payment" width="256" height="256"/>
         <image name="result_background" width="375" height="812"/>
+        <image name="salary" width="256" height="256"/>
         <image name="timer" catalog="system" width="128" height="121"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -30,11 +30,11 @@ class SavingInterestRateViewController: UIViewController {
     
     @IBAction func calculateInterest(_ sender: UIButton) {
         //convert text values to relevant type
-        let investmentAmount = Double(self.investmentAmount.text ?? "0")
-        let futureValue = Double(self.futureValue.text ?? "0")
-        let duration = Int(self.duration.text ?? "0")
+        let investmentAmount = Double(self.investmentAmount.text!) ?? 0
+        let futureValue = Double(self.futureValue.text!) ?? 0
+        let duration = Int(self.duration.text!) ?? 0
         
-        let calculatedInterestRate = Helper.calculateInterestRateForInvestment(futureValue!, investmentAmount!, 12, duration!)
+        let calculatedInterestRate = Helper.calculateInterestRateForInvestment(futureValue, investmentAmount, 12, duration)
         
         self.calculatedInterestRate = calculatedInterestRate
         

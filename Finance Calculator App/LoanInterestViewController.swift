@@ -31,11 +31,11 @@ class LoanInterestViewController: UIViewController {
     @IBAction func calculateInterestRate(_ sender: UIButton) {
         
         //convert text values to relevant type
-        let loanAmount = Double(self.loanAmount.text ?? "0")
-        let paymentAmount = Double(self.paymentAmount.text ?? "0")
-        let numberOfPayments = Int(self.numberOfPayments.text ?? "0")
+        let loanAmount = Double(self.loanAmount.text!) ?? 0
+        let paymentAmount = Double(self.paymentAmount.text!) ?? 0
+        let numberOfPayments = Int(self.numberOfPayments.text!) ?? 0
         
-        let calculatedInterestRate = Helper.calculateInterestRate(paymentAmount!, loanAmount!, numberOfPayments!)
+        let calculatedInterestRate = Helper.calculateInterestRate(paymentAmount, loanAmount, numberOfPayments)
         
         self.calculatedInterestRate = calculatedInterestRate
         

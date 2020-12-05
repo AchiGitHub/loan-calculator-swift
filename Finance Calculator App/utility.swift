@@ -45,7 +45,7 @@ class Helper{
         let rounded_value = round(100*calculated_monthly_payment)/100
         
         if rounded_value.isNaN {
-            return "Calculated payment is unreasonable. Check inputs."
+            return errorValidator()
         }
         return String("Rs. \(rounded_value)")
     }
@@ -65,7 +65,7 @@ class Helper{
         let calculated_monthly_payment: Double = func_numerator/func_denominator
         
         if calculated_monthly_payment.isNaN {
-            return "Calculated payment unreasonable. Check inputs."
+            return errorValidator()
         }
         
         return String("Rs. \(roundOffDoubleValue(calculated_monthly_payment))")
@@ -94,7 +94,7 @@ class Helper{
         let funcDenominator = log(Double(1+calculatedMonthlyInterestRate))
         
         if funcNumerator.isNaN {
-            return "Calculated periods unreasonable. Check inputs."
+            return errorValidator()
         }
         let numberOfPayments = Int(round(funcNumerator/funcDenominator))
         return String(numberOfPayments)
@@ -129,7 +129,7 @@ class Helper{
         let approximatedInterest = pow(expressionOne-1, calculatedQValue)-1
         
         if approximatedInterest.isNaN {
-            return "Calculated interest rate is unreasonable. Check inputs."
+            return errorValidator()
         }
         return String("\(roundOffDoubleValue(approximatedInterest*1200)) %")
         
@@ -165,7 +165,7 @@ class Helper{
         let interestRateOnInvestment = roundOffDoubleValue(numberOfCompunds*secondTerm)
         
         if interestRateOnInvestment.isNaN {
-            return "Invalid Inputs. Please check the inputs."
+            return errorValidator()
         }
         return String("\(interestRateOnInvestment) %")
     }
@@ -177,8 +177,8 @@ class Helper{
         let numerator = log(futureValue/initialInvestment)
         let denominator = numberOfCompounds*(log(1+calculatedMonthlyInterestRate/numberOfCompounds))
         
-        if Int(numerator/denominator) < 0 {
-            return "Invalid Inputs. Please check the Inputs"
+        if numerator.isNaN || denominator.isNaN {
+            return errorValidator()
         }
         return String("\(Int(numerator/(denominator*12))) Years")
     }
@@ -189,7 +189,7 @@ class Helper{
         let denominator = pow(1+(calculatedMonthlyInterestRate/Double(numberOfCompounds)), Double(numberOfCompounds*duration))
         
         if denominator.isNaN {
-            return "Invalid Inputs. Please check the values"
+            return errorValidator()
         }
         return String("Rs. \(roundOffDoubleValue(futureValue/denominator))")
     }
@@ -208,7 +208,7 @@ class Helper{
         let denominator = calculatedMonthlyInterestRate/Double(numberOfCompounds)
         
         if denominator == 0 {
-            return "Invalid Inputs. Please Provide valid inputs"
+            return errorValidator()
         }
         let futureValueOfASeries = paymentAmount*(numerator/denominator)
         
@@ -218,6 +218,10 @@ class Helper{
         }
         
         return String("Rs. \(roundOffDoubleValue(compoundInterest+futureValueOfASeries))")
+    }
+    
+    static func errorValidator() -> String {
+        return "Calculated result is unreasonable. Check inputs."
     }
     
 }
