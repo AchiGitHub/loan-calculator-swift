@@ -68,6 +68,10 @@ class MortgageViewController: UIViewController {
         return Helper.calculateMortgagePaymentAmount(interestRate, homePriceDouble!, numberOfYearsInt!)
     }
     
+    @IBAction func openAmortizationTable(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "goToTableView", sender: self)
+    }
+    
     
     @objc func keyboardWillShow(notification: NSNotification) {
         if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
@@ -80,6 +84,23 @@ class MortgageViewController: UIViewController {
     @objc func keyboardWillHide(notification: NSNotification) {
         if self.view.frame.origin.y != 0 {
             self.view.frame.origin.y = 0
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //Identify which segue was triggered if in future new segues are added to parent
+        if segue.identifier == "goToTableView" {
+            //downcasting to a ModalViewController - destination is a UIViewController
+            let destinationViewController = segue.destination as! TableViewController
+            destinationViewController.interestRate = Double(self.interestRate.value)
+            destinationViewController.loanBalance = self.homePrice.text ?? "0"
+            
+            let paymentAmount = self.paymentAmount.text;
+            let paymentAmountArr = paymentAmount?.components(separatedBy: " ")
+            let paymentAmountValue: Double = Double(paymentAmountArr![1]) ?? 0
+            
+            destinationViewController.monthlyPayment = "\(paymentAmountValue)"
+            destinationViewController.period = self.numberOfYears.text ?? "0"
         }
     }
 }
