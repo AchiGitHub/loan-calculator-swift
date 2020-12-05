@@ -1340,7 +1340,7 @@
                         <outlet property="initialInvestment" destination="K6U-3A-IBN" id="oRh-2z-WHw"/>
                         <outlet property="interestRate" destination="8Rx-j4-Okr" id="Mmr-QE-LMm"/>
                         <outlet property="interestRateText" destination="z6U-wv-nN9" id="pTc-sK-7Ss"/>
-                        <segue destination="4hT-qu-6Vn" kind="presentation" identifier="goToInvestmentDuration" id="cTl-Gm-IAa"/>
+                        <segue destination="0OR-PW-EB2" kind="presentation" identifier="goToInvestmentDuration" id="MhH-HR-1Cf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4ch-NO-bUw" sceneMemberID="firstResponder"/>
@@ -1491,7 +1491,7 @@
                         <outlet property="duration" destination="DcZ-mT-aol" id="6rt-pZ-gqh"/>
                         <outlet property="futureValue" destination="uOl-TZ-M4z" id="PL4-ct-Uqy"/>
                         <outlet property="investmentAmount" destination="rhC-MU-c3m" id="JJE-Eo-i6z"/>
-                        <segue destination="4hT-qu-6Vn" kind="presentation" identifier="goToInvestmentInterest" id="BKE-Lf-YNP"/>
+                        <segue destination="0OR-PW-EB2" kind="presentation" identifier="goToInvestmentInterest" id="2rz-cE-ccK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lx1-aL-Bw6" sceneMemberID="firstResponder"/>
@@ -1659,7 +1659,7 @@
                         <outlet property="futureValue" destination="4wX-8O-LYP" id="rZS-B0-25W"/>
                         <outlet property="interestRate" destination="wWt-QE-37V" id="qzB-OA-0d6"/>
                         <outlet property="interestRateText" destination="oXY-Ve-8iD" id="VxZ-0n-lQl"/>
-                        <segue destination="4hT-qu-6Vn" kind="presentation" identifier="goToInvestmentAmount" id="Loq-5e-o01"/>
+                        <segue destination="0OR-PW-EB2" kind="presentation" identifier="goToInvestmentAmount" id="FDH-x9-yWp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="07N-RQ-T2B" sceneMemberID="firstResponder"/>
@@ -1891,7 +1891,7 @@
                         <outlet property="interestRateText" destination="4f1-36-doZ" id="axU-gR-u0w"/>
                         <outlet property="monthlyPaymentAmount" destination="EsI-IJ-P10" id="8X7-aH-kAB"/>
                         <outlet property="paymentDoneAt" destination="nJ7-74-YQ2" id="Tnq-yC-KKA"/>
-                        <segue destination="4hT-qu-6Vn" kind="presentation" identifier="goToTotalFutureValue" id="yA5-T6-pVF"/>
+                        <segue destination="0OR-PW-EB2" kind="presentation" identifier="goToTotalFutureValue" id="u0l-jp-BLc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QCc-ox-wMw" sceneMemberID="firstResponder"/>
@@ -2830,8 +2830,87 @@
             </objects>
             <point key="canvasLocation" x="4013.04347826087" y="-123.21428571428571"/>
         </scene>
+        <!--Modal View Controller-->
+        <scene sceneID="5I8-Gv-8xP">
+            <objects>
+                <viewController id="0OR-PW-EB2" customClass="ModalViewController" customModule="Finance_Calculator_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6M6-1a-fGg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="result_background" translatesAutoresizingMaskIntoConstraints="NO" id="ZW6-8K-VOC">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="OKC-Za-k7g">
+                                <rect key="frame" x="38" y="375" width="338" height="92"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="NUMBER OF PAYMENTS" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qq3-58-IhV">
+                                        <rect key="frame" x="0.0" y="0.0" width="338" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="338" id="DpE-3Q-WsF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="1" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.34999999403953552" translatesAutoresizingMaskIntoConstraints="NO" id="A5G-lQ-C6d">
+                                        <rect key="frame" x="0.0" y="44" width="338" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="338" id="fal-AB-8rr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WnY-rf-lSg">
+                                <rect key="frame" x="20" y="762" width="374" height="51"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="ejg-en-QOP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="RECALCULATE">
+                                    <color key="titleColor" red="0.4549019608" green="0.44705882349999998" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="recalculatePressed:" destination="0OR-PW-EB2" eventType="touchUpInside" id="c2V-9L-ilb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QCD-nS-ipV"/>
+                        <color key="backgroundColor" red="0.19980379940000001" green="0.48169642689999997" blue="0.77313679459999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZW6-8K-VOC" firstAttribute="top" secondItem="6M6-1a-fGg" secondAttribute="top" id="1EV-0m-4ro"/>
+                            <constraint firstItem="OKC-Za-k7g" firstAttribute="centerY" secondItem="6M6-1a-fGg" secondAttribute="centerY" id="6D9-6Y-cBh"/>
+                            <constraint firstAttribute="bottom" secondItem="ZW6-8K-VOC" secondAttribute="bottom" id="9da-BZ-5fT"/>
+                            <constraint firstAttribute="trailing" secondItem="ZW6-8K-VOC" secondAttribute="trailing" id="AWS-ia-fe1"/>
+                            <constraint firstItem="WnY-rf-lSg" firstAttribute="leading" secondItem="6M6-1a-fGg" secondAttribute="leadingMargin" id="RnU-xk-mbj"/>
+                            <constraint firstItem="ZW6-8K-VOC" firstAttribute="leading" secondItem="6M6-1a-fGg" secondAttribute="leading" id="UfX-m3-xsF"/>
+                            <constraint firstItem="WnY-rf-lSg" firstAttribute="trailing" secondItem="6M6-1a-fGg" secondAttribute="trailingMargin" id="Ypq-lC-b6e"/>
+                            <constraint firstItem="OKC-Za-k7g" firstAttribute="centerX" secondItem="6M6-1a-fGg" secondAttribute="centerX" id="fJL-t7-0yT"/>
+                            <constraint firstItem="WnY-rf-lSg" firstAttribute="bottom" secondItem="QCD-nS-ipV" secondAttribute="bottom" constant="5" id="pX8-1p-zhX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="headerText" destination="qq3-58-IhV" id="xLw-lE-ije"/>
+                        <outlet property="textValue" destination="A5G-lQ-C6d" id="TT5-lL-BYF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UwD-fD-PiJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="487" y="4266"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="u0l-jp-BLc"/>
         <segue reference="puC-0K-p72"/>
     </inferredMetricsTieBreakers>
     <resources>
