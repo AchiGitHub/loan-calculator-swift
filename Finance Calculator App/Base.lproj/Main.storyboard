@@ -2553,7 +2553,7 @@
                                                                     <constraint firstAttribute="height" constant="72" id="X8m-FJ-czP"/>
                                                                 </constraints>
                                                             </imageView>
-                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="View Amortization Button is enabled after calculation is done on loans" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="gPD-RJ-Ayy">
+                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="View Amortization Button is enabled after calculation is done on loans" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPD-RJ-Ayy">
                                                                 <rect key="frame" x="93" y="0.0" width="289" height="72"/>
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <color key="textColor" systemColor="labelColor"/>
@@ -2575,7 +2575,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KOb-LL-4mq">
                                                 <rect key="frame" x="0.0" y="250" width="414" height="150"/>
                                                 <subviews>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="u6j-il-WNP">
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u6j-il-WNP">
                                                         <rect key="frame" x="5" y="5" width="404" height="140"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <string key="text">Compound interest can work for you or against you. Whether you’re taking out a loan or making an investment, either way it’s the same set of formulas. This page gives you the formulas, shows where they came from!</string>
@@ -3216,7 +3216,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GP0-ec-vqt">
                                                 <rect key="frame" x="0.0" y="150" width="414" height="150"/>
                                                 <subviews>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="6Fi-va-Yw7">
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Fi-va-Yw7">
                                                         <rect key="frame" x="5" y="5" width="404" height="140"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <string key="text">Use our Mortgage Calculator to estimate your monthly mortgage payment. You can input a different home price, down payment, loan term and interest rate to see how your monthly payment changes</string>
