@@ -2718,7 +2718,7 @@
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="the loan amount (the principal sum) or initial investment" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hHM-yJ-rQe">
+                                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="the loan amount (the principal sum) or initial investment" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hHM-yJ-rQe">
                                                                         <rect key="frame" x="87" y="0.0" width="287" height="50"/>
                                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                         <color key="textColor" systemColor="labelColor"/>
@@ -2740,7 +2740,7 @@
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="the amount of each equal payment" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SHz-2J-HVk">
+                                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="the amount of each equal payment" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHz-2J-HVk">
                                                                         <rect key="frame" x="87" y="0.0" width="287" height="50"/>
                                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                         <color key="textColor" systemColor="labelColor"/>
@@ -2762,7 +2762,7 @@
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="the interest rate per period, not per year" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nut-wG-A4h">
+                                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="the interest rate per period, not per year" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nut-wG-A4h">
                                                                         <rect key="frame" x="87" y="0.0" width="287" height="50"/>
                                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                         <color key="textColor" systemColor="labelColor"/>
@@ -2784,7 +2784,7 @@
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="the number of time periods elapsed at any given point" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Y6v-NA-hXq">
+                                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="the number of time periods elapsed at any given point" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y6v-NA-hXq">
                                                                         <rect key="frame" x="87" y="0.0" width="287" height="50"/>
                                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                         <color key="textColor" systemColor="labelColor"/>
@@ -2806,7 +2806,7 @@
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="the total number of payments for the entire loan or investment" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pH5-lR-yv7">
+                                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="the total number of payments for the entire loan or investment" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pH5-lR-yv7">
                                                                         <rect key="frame" x="87" y="0.0" width="287" height="50"/>
                                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                         <color key="textColor" systemColor="labelColor"/>
@@ -3284,7 +3284,7 @@
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text=" the total monthly mortgage payment" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bVC-AH-UYQ">
+                                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text=" the total monthly mortgage payment" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVC-AH-UYQ">
                                                                         <rect key="frame" x="87" y="0.0" width="287" height="50"/>
                                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                         <color key="textColor" systemColor="labelColor"/>
@@ -3306,7 +3306,7 @@
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="the principal loan amount" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fcP-jP-MUW">
+                                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="the principal loan amount" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcP-jP-MUW">
                                                                         <rect key="frame" x="87" y="0.0" width="287" height="50"/>
                                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                         <color key="textColor" systemColor="labelColor"/>
@@ -3328,7 +3328,7 @@
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text=" monthly interest rate" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kRW-ZN-7FO">
+                                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text=" monthly interest rate" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kRW-ZN-7FO">
                                                                         <rect key="frame" x="87" y="0.0" width="287" height="50"/>
                                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                         <color key="textColor" systemColor="labelColor"/>
@@ -3350,7 +3350,7 @@
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="number of payments over the loan’s lifetime" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Y0q-pU-6xc">
+                                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="number of payments over the loan’s lifetime" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y0q-pU-6xc">
                                                                         <rect key="frame" x="87" y="0.0" width="287" height="50"/>
                                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                         <color key="textColor" systemColor="labelColor"/>
@@ -3372,7 +3372,7 @@
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="the total number of payments for the entire loan or investment" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vUp-Cu-8H3">
+                                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="the total number of payments for the entire loan or investment" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vUp-Cu-8H3">
                                                                         <rect key="frame" x="87" y="0.0" width="287" height="50"/>
                                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                         <color key="textColor" systemColor="labelColor"/>
