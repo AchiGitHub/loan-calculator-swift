@@ -68,4 +68,8 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
         return totalPayments[section].period
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
 }
