@@ -11,12 +11,13 @@
 		292C6B532579460100D718A6 /* LoanInterestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292C6B522579460100D718A6 /* LoanInterestViewController.swift */; };
 		292C6B602579560200D718A6 /* OriginalAmountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292C6B5F2579560200D718A6 /* OriginalAmountViewController.swift */; };
 		292C6B652579658C00D718A6 /* PaymentAmountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292C6B642579658C00D718A6 /* PaymentAmountViewController.swift */; };
-		293295D42579E1F50045B8D6 /* Mortgage2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293295D32579E1F50045B8D6 /* Mortgage2ViewController.swift */; };
+		293295D42579E1F50045B8D6 /* MortgageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293295D32579E1F50045B8D6 /* MortgageViewController.swift */; };
 		293295E5257A077D0045B8D6 /* SavingInterestRateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293295E4257A077D0045B8D6 /* SavingInterestRateViewController.swift */; };
 		2933365F25781412002C2B98 /* LoanPaymentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2933365E25781412002C2B98 /* LoanPaymentsViewController.swift */; };
 		293B50C32579249300CD6F9D /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293B50C22579249300CD6F9D /* ModalViewController.swift */; };
 		29915F2D257C023100DD7E19 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29915F2C257C023100DD7E19 /* TableViewController.swift */; };
 		29915F32257C03E900DD7E19 /* AmortizationPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29915F31257C03E900DD7E19 /* AmortizationPayment.swift */; };
+		29915F37257C316E00DD7E19 /* SavingsModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29915F36257C316E00DD7E19 /* SavingsModalViewController.swift */; };
 		29980CE4257A0B9300B50625 /* InvestmentDurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29980CE3257A0B9300B50625 /* InvestmentDurationViewController.swift */; };
 		29980CE9257A131000B50625 /* InitialInvestmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29980CE8257A131000B50625 /* InitialInvestmentViewController.swift */; };
 		29980CEE257A2BFE00B50625 /* CompoundFutureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29980CED257A2BFE00B50625 /* CompoundFutureViewController.swift */; };
@@ -52,12 +53,13 @@
 		292C6B522579460100D718A6 /* LoanInterestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanInterestViewController.swift; sourceTree = "<group>"; };
 		292C6B5F2579560200D718A6 /* OriginalAmountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriginalAmountViewController.swift; sourceTree = "<group>"; };
 		292C6B642579658C00D718A6 /* PaymentAmountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentAmountViewController.swift; sourceTree = "<group>"; };
-		293295D32579E1F50045B8D6 /* Mortgage2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mortgage2ViewController.swift; sourceTree = "<group>"; };
+		293295D32579E1F50045B8D6 /* MortgageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MortgageViewController.swift; sourceTree = "<group>"; };
 		293295E4257A077D0045B8D6 /* SavingInterestRateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingInterestRateViewController.swift; sourceTree = "<group>"; };
 		2933365E25781412002C2B98 /* LoanPaymentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanPaymentsViewController.swift; sourceTree = "<group>"; };
 		293B50C22579249300CD6F9D /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 		29915F2C257C023100DD7E19 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		29915F31257C03E900DD7E19 /* AmortizationPayment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmortizationPayment.swift; sourceTree = "<group>"; };
+		29915F36257C316E00DD7E19 /* SavingsModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingsModalViewController.swift; sourceTree = "<group>"; };
 		29980CE3257A0B9300B50625 /* InvestmentDurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentDurationViewController.swift; sourceTree = "<group>"; };
 		29980CE8257A131000B50625 /* InitialInvestmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialInvestmentViewController.swift; sourceTree = "<group>"; };
 		29980CED257A2BFE00B50625 /* CompoundFutureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompoundFutureViewController.swift; sourceTree = "<group>"; };
@@ -125,7 +127,7 @@
 		29A3AD432563985E00101F83 /* Finance Calculator App */ = {
 			isa = PBXGroup;
 			children = (
-				293295D32579E1F50045B8D6 /* Mortgage2ViewController.swift */,
+				293295D32579E1F50045B8D6 /* MortgageViewController.swift */,
 				29A3AD442563985E00101F83 /* AppDelegate.swift */,
 				29A3AD462563985E00101F83 /* SceneDelegate.swift */,
 				29A3AD482563985E00101F83 /* ViewController.swift */,
@@ -139,6 +141,7 @@
 				292C6B5F2579560200D718A6 /* OriginalAmountViewController.swift */,
 				292C6B522579460100D718A6 /* LoanInterestViewController.swift */,
 				293B50C22579249300CD6F9D /* ModalViewController.swift */,
+				29915F36257C316E00DD7E19 /* SavingsModalViewController.swift */,
 				2933365E25781412002C2B98 /* LoanPaymentsViewController.swift */,
 				29A3AD4D2563985F00101F83 /* Assets.xcassets */,
 				29A3AD4F2563985F00101F83 /* LaunchScreen.storyboard */,
@@ -301,8 +304,9 @@
 				291A7972257543C100A6A7F3 /* utility.swift in Sources */,
 				29980CEE257A2BFE00B50625 /* CompoundFutureViewController.swift in Sources */,
 				29915F32257C03E900DD7E19 /* AmortizationPayment.swift in Sources */,
-				293295D42579E1F50045B8D6 /* Mortgage2ViewController.swift in Sources */,
+				293295D42579E1F50045B8D6 /* MortgageViewController.swift in Sources */,
 				29980CE4257A0B9300B50625 /* InvestmentDurationViewController.swift in Sources */,
+				29915F37257C316E00DD7E19 /* SavingsModalViewController.swift in Sources */,
 				292C6B652579658C00D718A6 /* PaymentAmountViewController.swift in Sources */,
 				2933365F25781412002C2B98 /* LoanPaymentsViewController.swift in Sources */,
 				293295E5257A077D0045B8D6 /* SavingInterestRateViewController.swift in Sources */,

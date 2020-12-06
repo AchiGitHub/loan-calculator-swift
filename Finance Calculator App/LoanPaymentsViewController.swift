@@ -55,7 +55,11 @@ class LoanPaymentsViewController: UIViewController {
         self.interestRateSlider.value = Float(interestRateValue)
     }
     
-     // MARK: - Navigation to result modal
+    @IBAction func viewAmotizationButtonPressed(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "goToTableViewNumPayments", sender: self)
+    }
+    
+    // MARK: - Navigation to result modal
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         //Identify which segue was triggered if in future new segues are added to parent
@@ -64,6 +68,18 @@ class LoanPaymentsViewController: UIViewController {
             let destinationViewController = segue.destination as! ModalViewController
             destinationViewController.headerName = "NUMBER OF PAYMENTS"
             destinationViewController.passedValue = calculatedNumberOfPayments
+        }
+        
+        if segue.identifier == "goToTableViewNumPayments" {
+            let destinationViewController = segue.destination as! TableViewController
+
+            let calculateYears = Int(calculatedNumberOfPayments) ?? 0
+            let numberOfYears = Int(calculateYears/12)
+
+            destinationViewController.interestRate = Double(self.interestRateSlider.value)
+            destinationViewController.loanBalance = self.loanAmount.text ?? "0"
+            destinationViewController.monthlyPayment = self.paymentAmount.text ?? "0"
+            destinationViewController.period = String(numberOfYears)
         }
     }
     

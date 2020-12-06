@@ -1,14 +1,14 @@
 //
-//  ModalViewController.swift
+//  SavingsModalViewController.swift
 //  Finance Calculator App
 //
-//  Created by Achintha Ikiriwatte on 2020-12-03.
+//  Created by Achintha Ikiriwatte on 2020-12-06.
 //
 
 import UIKit
 
-class ModalViewController: UIViewController {
-    
+class SavingsModalViewController: UIViewController {
+
     var passedValue: String?
     var headerName: String?
 
@@ -25,5 +25,5 @@ class ModalViewController: UIViewController {
     @IBAction func recalculatePressed(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
     }
-    
+
 }

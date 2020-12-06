@@ -87,7 +87,7 @@ class CompoundFutureViewController: UIViewController {
        //Identify which segue was triggered if in future new segues are added to parent
        if segue.identifier == "goToTotalFutureValue" {
            //downcasting to a ModalViewController - destination is a UIViewController
-           let destinationViewController = segue.destination as! ModalViewController
+           let destinationViewController = segue.destination as! SavingsModalViewController
             let monthString = monthStart ? "(Payments at month Start)" : "(Payments at month End)"
            destinationViewController.headerName = "Total Future Value \(monthString)"
            destinationViewController.passedValue = calculatedFutureVal

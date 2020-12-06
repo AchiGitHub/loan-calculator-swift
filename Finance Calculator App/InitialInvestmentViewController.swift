@@ -59,7 +59,7 @@ class InitialInvestmentViewController: UIViewController {
        //Identify which segue was triggered if in future new segues are added to parent
        if segue.identifier == "goToInvestmentAmount" {
            //downcasting to a ModalViewController - destination is a UIViewController
-           let destinationViewController = segue.destination as! ModalViewController
+           let destinationViewController = segue.destination as! SavingsModalViewController
            destinationViewController.headerName = "INVESTMENT AMOUNT"
            destinationViewController.passedValue = investAmount
        }

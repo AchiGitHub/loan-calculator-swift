@@ -34,7 +34,7 @@ class OriginalAmountViewController: UIViewController {
         self.interestRateLabel.text = "\(String(interestRate)) %"
     }
     
-    @IBAction func interestRateTextChange(_ sender: UITextField) {
+    @IBAction func interestRateDidChange(_ sender: UITextField) {
         let interestRateText = sender.text;
         let interestRateArr = interestRateText?.components(separatedBy: " ")
         let interestRateValue: Double = Double(interestRateArr![0]) ?? 0
@@ -55,6 +55,10 @@ class OriginalAmountViewController: UIViewController {
         self.performSegue(withIdentifier: "goToOriginalAmount", sender: self)
     }
     
+    @IBAction func viewAmotizationButtonPressed(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "goToTableViewOnOriginalAmount", sender: self)
+    }
+    
     
     // MARK: - Navigation to result modal
 
@@ -66,6 +70,21 @@ class OriginalAmountViewController: UIViewController {
            destinationViewController.headerName = "ORIGINAL LOAN AMOUNT"
            destinationViewController.passedValue = calculatedOriginalAmount
        }
+    if segue.identifier == "goToTableViewOnOriginalAmount" {
+        let destinationViewController = segue.destination as! TableViewController
+        
+        let loanAmountText = calculatedOriginalAmount;
+        let loanAmountArr = loanAmountText.components(separatedBy: " ")
+        let loanAmountValue: Double = Double(loanAmountArr[1]) ?? 0
+        
+        let calculateYears = Int(self.numberOfPayments.text!) ?? 0
+        let numberOfYears = Int(calculateYears/12)
+        
+        destinationViewController.interestRate = Double(self.interestRate.value)
+        destinationViewController.loanBalance = String(loanAmountValue)
+        destinationViewController.monthlyPayment = self.paymentAmount.text ?? "0"
+        destinationViewController.period = String(numberOfYears)
+    }
    }
     
     @objc func keyboardWillShow(notification: NSNotification) {

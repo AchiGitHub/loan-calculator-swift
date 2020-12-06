@@ -7,16 +7,6 @@
 
 import UIKit
 
-class MobileBrand{
-    var brandName: String?
-    var modelName: [String]?
-    
-    init(brandName: String, modelName:[String]) {
-        self.brandName = brandName
-        self.modelName = modelName
-    }
-}
-
 class TableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
    
     @IBOutlet weak var tableView: UITableView!
@@ -36,7 +26,6 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
         let calculatedInterestRate = Helper.calculateMonthlyInterestRate(interestRate)
         let convertedMonthlyPayment = Double(monthlyPayment) ?? 0
         
-        print(monthlyPayment)
         for i in 1..<calculatedPeriod {
             
             var amortizationPayment = [AmortizationPayment]()

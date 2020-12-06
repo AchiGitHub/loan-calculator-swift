@@ -44,7 +44,7 @@ class SavingInterestRateViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "goToInvestmentInterest" {
-            let destinationViewController = segue.destination as! ModalViewController
+            let destinationViewController = segue.destination as! SavingsModalViewController
             
             destinationViewController.headerName = "INTEREST RATE"
             destinationViewController.passedValue = calculatedInterestRate

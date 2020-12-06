@@ -193,13 +193,13 @@
                                                         <rect key="frame" x="10" y="30" width="394" height="660"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="CALCULATE PAYMENT AMOUNT ON LOAN" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Lt-vA-9l4">
-                                                                <rect key="frame" x="0.0" y="0.0" width="394" height="298"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="394" height="237"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Loan Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sv0-kY-xM6">
-                                                                <rect key="frame" x="0.0" y="308" width="394" height="30"/>
+                                                                <rect key="frame" x="0.0" y="247" width="394" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="dyS-ZU-kzk"/>
                                                                 </constraints>
@@ -208,7 +208,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tKr-Ah-Pw7">
-                                                                <rect key="frame" x="0.0" y="348" width="394" height="50"/>
+                                                                <rect key="frame" x="0.0" y="287" width="394" height="50"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="50" id="REh-pO-aib"/>
                                                                 </constraints>
@@ -216,7 +216,7 @@
                                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                             </textField>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="TM6-pj-1Db">
-                                                                <rect key="frame" x="0.0" y="408" width="394" height="21"/>
+                                                                <rect key="frame" x="0.0" y="347" width="394" height="21"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Interest Rate (%)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9DJ-Pt-Ne9">
                                                                         <rect key="frame" x="0.0" y="0.0" width="127.5" height="21"/>
@@ -229,12 +229,7 @@
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                                         <connections>
-                                                                            <action selector="interestRateChange:" destination="w7L-0g-szF" eventType="editingDidEnd" id="Hfu-Ek-w2q"/>
-                                                                            <action selector="interestRateInputChange:" destination="w7L-0g-szF" eventType="editingDidEnd" id="7kC-gQ-gsH"/>
-                                                                            <action selector="interestRateText:" destination="w7L-0g-szF" eventType="editingChanged" id="8qR-yA-VqR"/>
-                                                                            <action selector="interestRateText:" destination="w7L-0g-szF" eventType="editingDidEnd" id="dOT-Hh-SyA"/>
-                                                                            <action selector="interestRateText:" destination="2cV-c5-tVY" eventType="editingDidEnd" id="nZe-dm-NvX"/>
-                                                                            <action selector="interestRateTextChange:" destination="w7L-0g-szF" eventType="editingDidEnd" id="IPa-QF-akj"/>
+                                                                            <action selector="interestRateTextDidChange:" destination="2cV-c5-tVY" eventType="editingChanged" id="dGa-eJ-am3"/>
                                                                         </connections>
                                                                     </textField>
                                                                 </subviews>
@@ -243,7 +238,7 @@
                                                                 </constraints>
                                                             </stackView>
                                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1.5" minValue="0.0" maxValue="150" translatesAutoresizingMaskIntoConstraints="NO" id="z7O-pI-nRj">
-                                                                <rect key="frame" x="-2" y="439" width="398" height="61"/>
+                                                                <rect key="frame" x="-2" y="378" width="398" height="61"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="60" id="Igf-vh-UlR"/>
                                                                 </constraints>
@@ -254,7 +249,7 @@
                                                                 </connections>
                                                             </slider>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Number of Payments" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YN5-Jq-X6R">
-                                                                <rect key="frame" x="0.0" y="509" width="394" height="30"/>
+                                                                <rect key="frame" x="0.0" y="448" width="394" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="UPB-wz-rvT"/>
                                                                 </constraints>
@@ -263,7 +258,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oJK-Sx-rBi">
-                                                                <rect key="frame" x="0.0" y="549" width="394" height="50"/>
+                                                                <rect key="frame" x="0.0" y="488" width="394" height="50"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="50" id="zQc-bI-fEN"/>
                                                                 </constraints>
@@ -271,7 +266,7 @@
                                                                 <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                                                             </textField>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rc0-gN-TDO">
-                                                                <rect key="frame" x="0.0" y="609" width="394" height="51"/>
+                                                                <rect key="frame" x="0.0" y="548" width="394" height="51"/>
                                                                 <color key="backgroundColor" red="0.38587427140000002" green="0.37681865689999999" blue="0.61593395470000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="51" id="7NQ-nw-Zg4"/>
@@ -288,6 +283,26 @@
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="calculatePaymentAmount:" destination="2cV-c5-tVY" eventType="touchUpInside" id="vFU-E7-wmi"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dYY-GL-FeB">
+                                                                <rect key="frame" x="0.0" y="609" width="394" height="51"/>
+                                                                <color key="backgroundColor" red="0.38587427140000002" green="0.37681865689999999" blue="0.61593395470000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="51" id="sVL-4t-wIF"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                                <state key="normal" title="VIEW AMORTIZATION PAYMENT">
+                                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <integer key="value" value="10"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="viewAmortizationPayment:" destination="2cV-c5-tVY" eventType="touchUpInside" id="a8H-hh-IcP"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -336,6 +351,7 @@
                         <outlet property="loanAmount" destination="tKr-Ah-Pw7" id="OVY-Kn-O8g"/>
                         <outlet property="numberOfPayments" destination="oJK-Sx-rBi" id="a2q-xX-zGG"/>
                         <segue destination="4hT-qu-6Vn" kind="presentation" identifier="goToPaymentAmount" id="ClW-F9-5uZ"/>
+                        <segue destination="7ii-HS-w2K" kind="show" identifier="goToPaymentAmountTable" id="bni-sE-PhU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rKD-Bq-r7o" sceneMemberID="firstResponder"/>
@@ -366,13 +382,13 @@
                                                         <rect key="frame" x="10" y="10" width="394" height="680"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="CALCULATE NUMBER OF PAYMENTS" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xvq-wb-LTb">
-                                                                <rect key="frame" x="0.0" y="0.0" width="394" height="318"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="394" height="257"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Loan Amount (Rs.)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UHQ-MX-Twv">
-                                                                <rect key="frame" x="0.0" y="328" width="394" height="30"/>
+                                                                <rect key="frame" x="0.0" y="267" width="394" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="vsV-yT-c93"/>
                                                                 </constraints>
@@ -381,7 +397,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Lz-pN-nKD">
-                                                                <rect key="frame" x="0.0" y="368" width="394" height="50"/>
+                                                                <rect key="frame" x="0.0" y="307" width="394" height="50"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="50" id="3EJ-Gf-LN5"/>
                                                                 </constraints>
@@ -389,7 +405,7 @@
                                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                             </textField>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="nGh-uF-1Eg">
-                                                                <rect key="frame" x="0.0" y="428" width="394" height="21"/>
+                                                                <rect key="frame" x="0.0" y="367" width="394" height="21"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Interest Rate (%)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ko-hj-vnu">
                                                                         <rect key="frame" x="0.0" y="0.0" width="127.5" height="21"/>
@@ -402,11 +418,7 @@
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                                         <connections>
-                                                                            <action selector="interestRateChange:" destination="w7L-0g-szF" eventType="editingDidEnd" id="p3o-y4-pXl"/>
-                                                                            <action selector="interestRateInputChange:" destination="w7L-0g-szF" eventType="editingDidEnd" id="quJ-UN-o7C"/>
-                                                                            <action selector="interestRateText:" destination="w7L-0g-szF" eventType="editingDidEnd" id="U5C-rw-4LY"/>
                                                                             <action selector="interestRateText:" destination="w7L-0g-szF" eventType="editingChanged" id="gav-13-t3d"/>
-                                                                            <action selector="interestRateTextChange:" destination="w7L-0g-szF" eventType="editingDidEnd" id="hAc-Cr-GKu"/>
                                                                         </connections>
                                                                     </textField>
                                                                 </subviews>
@@ -415,7 +427,7 @@
                                                                 </constraints>
                                                             </stackView>
                                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="30" minValue="0.0" maxValue="150" translatesAutoresizingMaskIntoConstraints="NO" id="hsx-d1-0yL">
-                                                                <rect key="frame" x="-2" y="459" width="398" height="61"/>
+                                                                <rect key="frame" x="-2" y="398" width="398" height="61"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="60" id="Gus-m9-ZWL"/>
                                                                 </constraints>
@@ -426,7 +438,7 @@
                                                                 </connections>
                                                             </slider>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Monthly Payment Amount (Rs.)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PN3-th-PR9">
-                                                                <rect key="frame" x="0.0" y="529" width="394" height="30"/>
+                                                                <rect key="frame" x="0.0" y="468" width="394" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="obp-JU-jew"/>
                                                                 </constraints>
@@ -435,7 +447,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GOj-ZZ-Ksj">
-                                                                <rect key="frame" x="0.0" y="569" width="394" height="50"/>
+                                                                <rect key="frame" x="0.0" y="508" width="394" height="50"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="50" id="1ZD-qd-nFV"/>
                                                                 </constraints>
@@ -443,7 +455,7 @@
                                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                             </textField>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPt-pR-4gD">
-                                                                <rect key="frame" x="0.0" y="629" width="394" height="51"/>
+                                                                <rect key="frame" x="0.0" y="568" width="394" height="51"/>
                                                                 <color key="backgroundColor" red="0.38587427140000002" green="0.37681865689999999" blue="0.61593395470000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="51" id="0q1-3B-YMr"/>
@@ -460,6 +472,26 @@
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="calculateButton:" destination="w7L-0g-szF" eventType="touchUpInside" id="7Tb-t4-JXV"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RCQ-Cl-oyS">
+                                                                <rect key="frame" x="0.0" y="629" width="394" height="51"/>
+                                                                <color key="backgroundColor" red="0.38587427140000002" green="0.37681865689999999" blue="0.61593395470000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="51" id="AXk-a8-FYG"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                                <state key="normal" title="VIEW AMORTIZATION TABLE">
+                                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <integer key="value" value="10"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="viewAmotizationButtonPressed:" destination="w7L-0g-szF" eventType="touchUpInside" id="Hve-qw-t5I"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -508,6 +540,7 @@
                         <outlet property="loanAmount" destination="2Lz-pN-nKD" id="jKu-m2-YLM"/>
                         <outlet property="paymentAmount" destination="GOj-ZZ-Ksj" id="vfn-b2-E8z"/>
                         <segue destination="4hT-qu-6Vn" kind="presentation" identifier="goToNumberOfPayments" id="D2h-ho-2ah"/>
+                        <segue destination="7ii-HS-w2K" kind="show" identifier="goToTableViewNumPayments" id="xF2-OW-4jQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RgK-pb-SvF" sceneMemberID="firstResponder"/>
@@ -538,13 +571,13 @@
                                                         <rect key="frame" x="10" y="10" width="394" height="680"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="CALCULATE INTEREST" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ti9-fd-auP">
-                                                                <rect key="frame" x="0.0" y="0.0" width="394" height="319"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="394" height="258"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Loan Amount (Rs.)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yo2-3e-ZWu">
-                                                                <rect key="frame" x="0.0" y="329" width="394" height="30"/>
+                                                                <rect key="frame" x="0.0" y="268" width="394" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="lMG-hb-Zes"/>
                                                                 </constraints>
@@ -553,7 +586,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9NP-yk-Gdk">
-                                                                <rect key="frame" x="0.0" y="369" width="394" height="50"/>
+                                                                <rect key="frame" x="0.0" y="308" width="394" height="50"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="50" id="nxV-Ie-qPP"/>
                                                                 </constraints>
@@ -561,7 +594,7 @@
                                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                             </textField>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Payment Amount (Rs.)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xyS-V8-tac">
-                                                                <rect key="frame" x="0.0" y="429" width="394" height="30"/>
+                                                                <rect key="frame" x="0.0" y="368" width="394" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="GUo-n3-uR3"/>
                                                                 </constraints>
@@ -570,7 +603,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lRO-QI-MHY">
-                                                                <rect key="frame" x="0.0" y="469" width="394" height="50"/>
+                                                                <rect key="frame" x="0.0" y="408" width="394" height="50"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="50" id="C4E-Wu-9Fr"/>
                                                                 </constraints>
@@ -578,7 +611,7 @@
                                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                             </textField>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Number of Payments" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f1G-Ow-QVz">
-                                                                <rect key="frame" x="0.0" y="529" width="394" height="30"/>
+                                                                <rect key="frame" x="0.0" y="468" width="394" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="aZE-wm-usI"/>
                                                                 </constraints>
@@ -587,7 +620,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ad3-uH-qgr">
-                                                                <rect key="frame" x="0.0" y="569" width="394" height="50"/>
+                                                                <rect key="frame" x="0.0" y="508" width="394" height="50"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="50" id="GOV-fX-97k"/>
                                                                 </constraints>
@@ -595,7 +628,7 @@
                                                                 <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                                                             </textField>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2BC-0u-bgT">
-                                                                <rect key="frame" x="0.0" y="629" width="394" height="51"/>
+                                                                <rect key="frame" x="0.0" y="568" width="394" height="51"/>
                                                                 <color key="backgroundColor" red="0.38587427140000002" green="0.37681865689999999" blue="0.61593395470000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="51" id="btF-bb-vx1"/>
@@ -612,6 +645,26 @@
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="calculateInterestRate:" destination="t3j-fk-V0V" eventType="touchUpInside" id="Far-z6-aHQ"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qgu-pY-3BI">
+                                                                <rect key="frame" x="0.0" y="629" width="394" height="51"/>
+                                                                <color key="backgroundColor" red="0.38587427140000002" green="0.37681865689999999" blue="0.61593395470000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="51" id="JGq-Wz-xeU"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                                <state key="normal" title="VIEW AMORTIZATION TABLE">
+                                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <integer key="value" value="10"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="viewAmortizationTable:" destination="t3j-fk-V0V" eventType="touchUpInside" id="2o9-WL-Sx2"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -659,6 +712,7 @@
                         <outlet property="numberOfPayments" destination="ad3-uH-qgr" id="kby-pR-mzF"/>
                         <outlet property="paymentAmount" destination="lRO-QI-MHY" id="CDU-B3-QAS"/>
                         <segue destination="4hT-qu-6Vn" kind="presentation" identifier="goToInterestRate" id="puC-0K-p72"/>
+                        <segue destination="7ii-HS-w2K" kind="show" identifier="goToTableView" id="hGn-le-mU8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bKE-S3-MWD" sceneMemberID="firstResponder"/>
@@ -689,13 +743,13 @@
                                                         <rect key="frame" x="10" y="10" width="394" height="680"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="CALCULATE ORIGINAL LOAN AMOUNT" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGk-ws-Hrm">
-                                                                <rect key="frame" x="0.0" y="0.0" width="394" height="318"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="394" height="257"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Payment Amount (Rs.)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t0N-pH-jEu">
-                                                                <rect key="frame" x="0.0" y="328" width="394" height="30"/>
+                                                                <rect key="frame" x="0.0" y="267" width="394" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="Qf5-X3-fbT"/>
                                                                 </constraints>
@@ -704,7 +758,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jzf-OO-kFj">
-                                                                <rect key="frame" x="0.0" y="368" width="394" height="50"/>
+                                                                <rect key="frame" x="0.0" y="307" width="394" height="50"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="50" id="W9w-Fv-rZq"/>
                                                                 </constraints>
@@ -712,7 +766,7 @@
                                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                             </textField>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="vJj-2a-REq">
-                                                                <rect key="frame" x="0.0" y="428" width="394" height="21"/>
+                                                                <rect key="frame" x="0.0" y="367" width="394" height="21"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Interest Rate (%)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BKD-3A-LQw">
                                                                         <rect key="frame" x="0.0" y="0.0" width="127.5" height="21"/>
@@ -725,12 +779,7 @@
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                                         <connections>
-                                                                            <action selector="interestRateChange:" destination="w7L-0g-szF" eventType="editingDidEnd" id="bMh-tU-1jQ"/>
-                                                                            <action selector="interestRateInputChange:" destination="w7L-0g-szF" eventType="editingDidEnd" id="1Tf-9S-VIA"/>
-                                                                            <action selector="interestRateText:" destination="w7L-0g-szF" eventType="editingChanged" id="2ky-ri-ZlG"/>
-                                                                            <action selector="interestRateText:" destination="w7L-0g-szF" eventType="editingDidEnd" id="D7c-uT-Puv"/>
-                                                                            <action selector="interestRateTextChange:" destination="w7L-0g-szF" eventType="editingDidEnd" id="IWY-Co-e39"/>
-                                                                            <action selector="interestRateTextChange:" destination="jMo-8I-m9t" eventType="editingDidEnd" id="eoK-ZE-lxU"/>
+                                                                            <action selector="interestRateDidChange:" destination="jMo-8I-m9t" eventType="editingChanged" id="KeF-Ya-bNE"/>
                                                                         </connections>
                                                                     </textField>
                                                                 </subviews>
@@ -739,7 +788,7 @@
                                                                 </constraints>
                                                             </stackView>
                                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1.5" minValue="0.001" maxValue="150" translatesAutoresizingMaskIntoConstraints="NO" id="IPe-Wt-lLZ">
-                                                                <rect key="frame" x="-2" y="459" width="398" height="61"/>
+                                                                <rect key="frame" x="-2" y="398" width="398" height="61"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="60" id="C3b-dK-oCg"/>
                                                                 </constraints>
@@ -750,7 +799,7 @@
                                                                 </connections>
                                                             </slider>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Number of Payments" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MCc-Zo-tPS">
-                                                                <rect key="frame" x="0.0" y="529" width="394" height="30"/>
+                                                                <rect key="frame" x="0.0" y="468" width="394" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="wL3-qE-REo"/>
                                                                 </constraints>
@@ -759,7 +808,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0WR-oW-mwn">
-                                                                <rect key="frame" x="0.0" y="569" width="394" height="50"/>
+                                                                <rect key="frame" x="0.0" y="508" width="394" height="50"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="50" id="tm9-hO-D4M"/>
                                                                 </constraints>
@@ -767,7 +816,7 @@
                                                                 <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                                                             </textField>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="08Z-Ax-cOc">
-                                                                <rect key="frame" x="0.0" y="629" width="394" height="51"/>
+                                                                <rect key="frame" x="0.0" y="568" width="394" height="51"/>
                                                                 <color key="backgroundColor" red="0.38587427140000002" green="0.37681865689999999" blue="0.61593395470000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="51" id="vp5-Av-cbc"/>
@@ -784,6 +833,26 @@
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="calculateOriginalAmount:" destination="jMo-8I-m9t" eventType="touchUpInside" id="eqa-Zs-oR9"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ads-rV-oDX">
+                                                                <rect key="frame" x="0.0" y="629" width="394" height="51"/>
+                                                                <color key="backgroundColor" red="0.38587427140000002" green="0.37681865689999999" blue="0.61593395470000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="51" id="YL7-ve-sZd"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                                <state key="normal" title="VIEW AMORTIZATION TABLE">
+                                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <integer key="value" value="10"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="viewAmotizationButtonPressed:" destination="jMo-8I-m9t" eventType="touchUpInside" id="Cw8-XV-207"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -832,6 +901,7 @@
                         <outlet property="numberOfPayments" destination="0WR-oW-mwn" id="856-m7-v0C"/>
                         <outlet property="paymentAmount" destination="Jzf-OO-kFj" id="Cxz-HU-3gd"/>
                         <segue destination="4hT-qu-6Vn" kind="presentation" identifier="goToOriginalAmount" id="3Ej-q0-HxR"/>
+                        <segue destination="7ii-HS-w2K" kind="show" identifier="goToTableViewOnOriginalAmount" id="opk-Ib-COQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LHF-2k-kdI" sceneMemberID="firstResponder"/>
@@ -914,7 +984,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ls2-Rz-GBk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6251" y="2821"/>
+            <point key="canvasLocation" x="9861" y="777"/>
         </scene>
         <!--Mortgage-->
         <scene sceneID="Bjt-79-Ovj">
@@ -997,13 +1067,8 @@
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                                         <connections>
-                                                                            <action selector="interestRateChange:" destination="w7L-0g-szF" eventType="editingDidEnd" id="Bqy-41-E05"/>
-                                                                            <action selector="interestRateInputChange:" destination="w7L-0g-szF" eventType="editingDidEnd" id="m06-VT-6Xa"/>
                                                                             <action selector="interestRateText:" destination="w7L-0g-szF" eventType="editingChanged" id="6ON-HP-zc1"/>
-                                                                            <action selector="interestRateText:" destination="w7L-0g-szF" eventType="editingDidEnd" id="Hb8-3e-fDh"/>
                                                                             <action selector="interestRateTextChange:" destination="YVF-Rc-cqO" eventType="editingChanged" id="E0v-H2-K4B"/>
-                                                                            <action selector="interestRateTextChange:" destination="w7L-0g-szF" eventType="editingDidEnd" id="H1k-6q-b06"/>
-                                                                            <action selector="interestRateTextChange:" destination="YVF-Rc-cqO" eventType="editingDidEnd" id="M0O-Af-qKv"/>
                                                                         </connections>
                                                                     </textField>
                                                                 </subviews>
@@ -1177,7 +1242,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rsg-GV-cfY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6748" y="-1045"/>
+            <point key="canvasLocation" x="10594" y="-480"/>
         </scene>
         <!--SAVINGS-->
         <scene sceneID="DGk-Wn-zaN">
@@ -2473,23 +2538,9 @@
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KOb-LL-4mq">
                                                 <rect key="frame" x="0.0" y="150" width="414" height="100"/>
-                                                <subviews>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="lMH-5Z-vKJ">
-                                                        <rect key="frame" x="8" y="8" width="398" height="86"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                        <string key="text">Compound interest can work for you or against you. Whether you’re taking out a loan or making an investment, either way it’s the same set of formulas. This page gives you the formulas, shows where they came from.</string>
-                                                        <color key="textColor" systemColor="labelColor"/>
-                                                        <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="17"/>
-                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                    </textView>
-                                                </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="bottom" secondItem="lMH-5Z-vKJ" secondAttribute="bottom" constant="6" id="0G7-xw-uOG"/>
-                                                    <constraint firstItem="lMH-5Z-vKJ" firstAttribute="top" secondItem="KOb-LL-4mq" secondAttribute="top" constant="8" id="BDI-g5-ORP"/>
-                                                    <constraint firstItem="lMH-5Z-vKJ" firstAttribute="leading" secondItem="KOb-LL-4mq" secondAttribute="leading" constant="8" id="wK0-oo-cWY"/>
                                                     <constraint firstAttribute="height" constant="100" id="yaH-Fk-RxU"/>
-                                                    <constraint firstAttribute="trailing" secondItem="lMH-5Z-vKJ" secondAttribute="trailing" constant="8" id="zpg-n6-kdj"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pel-Tl-Bbl">
@@ -2830,10 +2881,10 @@
             </objects>
             <point key="canvasLocation" x="4013.04347826087" y="-123.21428571428571"/>
         </scene>
-        <!--Modal View Controller-->
+        <!--Savings Modal View Controller-->
         <scene sceneID="5I8-Gv-8xP">
             <objects>
-                <viewController id="0OR-PW-EB2" customClass="ModalViewController" customModule="Finance_Calculator_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="0OR-PW-EB2" customClass="SavingsModalViewController" customModule="Finance_Calculator_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6M6-1a-fGg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2911,7 +2962,8 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="u0l-jp-BLc"/>
-        <segue reference="puC-0K-p72"/>
+        <segue reference="opk-Ib-COQ"/>
+        <segue reference="3Ej-q0-HxR"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="LandingPage" width="256" height="256"/>
@@ -2936,9 +2988,6 @@
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

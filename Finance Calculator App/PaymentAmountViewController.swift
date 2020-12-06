@@ -32,7 +32,7 @@ class PaymentAmountViewController: UIViewController {
         self.interestRateText.text = "\(String(interestRate)) %"
     }
     
-    @IBAction func interestRateText(_ sender: UITextField) {
+    @IBAction func interestRateTextDidChange(_ sender: UITextField) {
         let interestRateText = sender.text;
         let interestRateArr = interestRateText?.components(separatedBy: " ")
         let interestRateValue: Double = Double(interestRateArr![0]) ?? 0
@@ -50,6 +50,10 @@ class PaymentAmountViewController: UIViewController {
         self.calculatedLoanAmount = paymentAmount
         
         self.performSegue(withIdentifier: "goToPaymentAmount", sender: self)
+    }
+    
+    @IBAction func viewAmortizationPayment(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "goToPaymentAmountTable", sender: self)
     }
     
     @objc func keyboardWillShow(notification: NSNotification) {
@@ -77,6 +81,23 @@ class PaymentAmountViewController: UIViewController {
            destinationViewController.headerName = "PAYMENT AMOUNT"
            destinationViewController.passedValue = calculatedLoanAmount
        }
+    
+        if segue.identifier == "goToPaymentAmountTable" {
+            let destinationViewController = segue.destination as! TableViewController
+            
+            let calculatedLoanAmountText = calculatedLoanAmount;
+            let calculatedLoanAmountArr = calculatedLoanAmountText.components(separatedBy: " ")
+            
+            let calculatedLoanAmountValue: Double = Double(calculatedLoanAmountArr[1]) ?? 0
+            
+            let calculateYears = Int(self.numberOfPayments.text!) ?? 0
+            let numberOfYears = Int(calculateYears/12)
+            
+            destinationViewController.interestRate = Double(self.interestRate.value)
+            destinationViewController.loanBalance = self.loanAmount.text ?? "0"
+            destinationViewController.monthlyPayment = String(calculatedLoanAmountValue)
+            destinationViewController.period = String(numberOfYears)
+        }
    }
 
 }

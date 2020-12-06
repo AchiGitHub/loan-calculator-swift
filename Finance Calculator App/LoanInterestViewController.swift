@@ -42,6 +42,9 @@ class LoanInterestViewController: UIViewController {
         self.performSegue(withIdentifier: "goToInterestRate", sender: self)
         
     }
+    @IBAction func viewAmortizationTable(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "goToTableView", sender: self)
+    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
@@ -50,6 +53,22 @@ class LoanInterestViewController: UIViewController {
             
             destinationViewController.headerName = "INTEREST RATE"
             destinationViewController.passedValue = calculatedInterestRate
+        }
+        
+        if segue.identifier == "goToTableView" {
+            let destinationViewController = segue.destination as! TableViewController
+            
+            let interestRateText = calculatedInterestRate;
+            let interestRateArr = interestRateText.components(separatedBy: " ")
+            let interestRateValue: Double = Double(interestRateArr[0]) ?? 0
+            
+            let calculateYears = Int(self.numberOfPayments.text!) ?? 0
+            let numberOfYears = Int(calculateYears/12)
+            
+            destinationViewController.interestRate = interestRateValue
+            destinationViewController.loanBalance = self.loanAmount.text ?? "0"
+            destinationViewController.monthlyPayment = self.paymentAmount.text ?? "0"
+            destinationViewController.period = String(numberOfYears)
         }
     }
     
