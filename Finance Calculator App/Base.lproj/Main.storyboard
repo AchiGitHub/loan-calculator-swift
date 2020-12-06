@@ -285,7 +285,7 @@
                                                                     <action selector="calculatePaymentAmount:" destination="2cV-c5-tVY" eventType="touchUpInside" id="vFU-E7-wmi"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dYY-GL-FeB">
+                                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dYY-GL-FeB">
                                                                 <rect key="frame" x="0.0" y="609" width="394" height="51"/>
                                                                 <color key="backgroundColor" red="0.38587427140000002" green="0.37681865689999999" blue="0.61593395470000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <constraints>
@@ -350,6 +350,7 @@
                         <outlet property="interestRateText" destination="YAH-Q1-yIQ" id="Msu-0g-lFD"/>
                         <outlet property="loanAmount" destination="tKr-Ah-Pw7" id="OVY-Kn-O8g"/>
                         <outlet property="numberOfPayments" destination="oJK-Sx-rBi" id="a2q-xX-zGG"/>
+                        <outlet property="viewPaymentsBtn" destination="dYY-GL-FeB" id="gX0-6U-d0s"/>
                         <segue destination="4hT-qu-6Vn" kind="presentation" identifier="goToPaymentAmount" id="ClW-F9-5uZ"/>
                         <segue destination="7ii-HS-w2K" kind="show" identifier="goToPaymentAmountTable" id="bni-sE-PhU"/>
                     </connections>
@@ -474,7 +475,7 @@
                                                                     <action selector="calculateButton:" destination="w7L-0g-szF" eventType="touchUpInside" id="7Tb-t4-JXV"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RCQ-Cl-oyS">
+                                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RCQ-Cl-oyS">
                                                                 <rect key="frame" x="0.0" y="629" width="394" height="51"/>
                                                                 <color key="backgroundColor" red="0.38587427140000002" green="0.37681865689999999" blue="0.61593395470000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <constraints>
@@ -539,6 +540,7 @@
                         <outlet property="interestRateSlider" destination="hsx-d1-0yL" id="dFA-6B-jIr"/>
                         <outlet property="loanAmount" destination="2Lz-pN-nKD" id="jKu-m2-YLM"/>
                         <outlet property="paymentAmount" destination="GOj-ZZ-Ksj" id="vfn-b2-E8z"/>
+                        <outlet property="viewPaymentsBtn" destination="RCQ-Cl-oyS" id="R4m-pE-LuS"/>
                         <segue destination="4hT-qu-6Vn" kind="presentation" identifier="goToNumberOfPayments" id="D2h-ho-2ah"/>
                         <segue destination="7ii-HS-w2K" kind="show" identifier="goToTableViewNumPayments" id="xF2-OW-4jQ"/>
                     </connections>
@@ -647,7 +649,7 @@
                                                                     <action selector="calculateInterestRate:" destination="t3j-fk-V0V" eventType="touchUpInside" id="Far-z6-aHQ"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qgu-pY-3BI">
+                                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qgu-pY-3BI">
                                                                 <rect key="frame" x="0.0" y="629" width="394" height="51"/>
                                                                 <color key="backgroundColor" red="0.38587427140000002" green="0.37681865689999999" blue="0.61593395470000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <constraints>
@@ -711,6 +713,7 @@
                         <outlet property="loanAmount" destination="9NP-yk-Gdk" id="o6i-Ot-Pxl"/>
                         <outlet property="numberOfPayments" destination="ad3-uH-qgr" id="kby-pR-mzF"/>
                         <outlet property="paymentAmount" destination="lRO-QI-MHY" id="CDU-B3-QAS"/>
+                        <outlet property="viewPaymentsBtn" destination="Qgu-pY-3BI" id="Mkn-2o-vFa"/>
                         <segue destination="4hT-qu-6Vn" kind="presentation" identifier="goToInterestRate" id="puC-0K-p72"/>
                         <segue destination="7ii-HS-w2K" kind="show" identifier="goToTableView" id="hGn-le-mU8"/>
                     </connections>
@@ -835,7 +838,7 @@
                                                                     <action selector="calculateOriginalAmount:" destination="jMo-8I-m9t" eventType="touchUpInside" id="eqa-Zs-oR9"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ads-rV-oDX">
+                                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ads-rV-oDX">
                                                                 <rect key="frame" x="0.0" y="629" width="394" height="51"/>
                                                                 <color key="backgroundColor" red="0.38587427140000002" green="0.37681865689999999" blue="0.61593395470000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <constraints>
@@ -900,6 +903,7 @@
                         <outlet property="interestRateLabel" destination="4c9-Oi-svu" id="nlf-Bd-Tz0"/>
                         <outlet property="numberOfPayments" destination="0WR-oW-mwn" id="856-m7-v0C"/>
                         <outlet property="paymentAmount" destination="Jzf-OO-kFj" id="Cxz-HU-3gd"/>
+                        <outlet property="viewPaymentsBtn" destination="ads-rV-oDX" id="KEH-Fp-fnk"/>
                         <segue destination="4hT-qu-6Vn" kind="presentation" identifier="goToOriginalAmount" id="3Ej-q0-HxR"/>
                         <segue destination="7ii-HS-w2K" kind="show" identifier="goToTableViewOnOriginalAmount" id="opk-Ib-COQ"/>
                     </connections>

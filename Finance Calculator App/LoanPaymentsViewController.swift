@@ -15,6 +15,7 @@ class LoanPaymentsViewController: UIViewController {
     @IBOutlet weak var loanAmount: UITextField!
     @IBOutlet weak var paymentAmount: UITextField!
     @IBOutlet weak var interestRateSlider: UISlider!
+    @IBOutlet weak var viewPaymentsBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,6 +43,8 @@ class LoanPaymentsViewController: UIViewController {
         let numberOfPayments = Helper.calculateNumberOfPayments(paymentAmount, Double(interestRate), loanAmount)
         
         self.calculatedNumberOfPayments = numberOfPayments
+        
+        viewPaymentsBtn.isEnabled = true
         
         self.performSegue(withIdentifier: "goToNumberOfPayments", sender: self)
         
